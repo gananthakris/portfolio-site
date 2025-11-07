@@ -9,7 +9,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
           <Image
             src="/Gokul.jpeg"
-            alt="Gokulkrishna A"
+            alt="Gokulkrishna A - Automation Engineer and AI Enthusiast"
             width={180}
             height={180}
             className="relative rounded-full shadow-2xl mb-6 object-cover border-4 border-white dark:border-zinc-800 ring-4 ring-blue-500/20 dark:ring-purple-500/20"
@@ -29,12 +29,13 @@ export default function Home() {
           Passionate about <span className="font-semibold text-blue-600 dark:text-blue-400">AI</span>, <span className="font-semibold text-purple-600 dark:text-purple-400">automation</span>, and building <span className="font-semibold text-indigo-600 dark:text-indigo-400">full-stack applications</span>
         </p>
         
-        <div className="flex gap-4 text-lg mb-12 animate-fade-in-up">
+        <div className="flex flex-wrap gap-4 text-lg mb-12 animate-fade-in-up justify-center">
           <a
             href="https://www.linkedin.com/in/agokulakrishna"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 rounded-lg bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 font-medium"
+            aria-label="Connect on LinkedIn"
           >
             LinkedIn
           </a>
@@ -43,8 +44,16 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 rounded-lg bg-gray-800 text-white hover:bg-gray-900 dark:bg-gray-700 dark:hover:bg-gray-600 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 font-medium"
+            aria-label="View GitHub profile"
           >
             GitHub
+          </a>
+          <a
+            href="/contact"
+            className="px-6 py-3 rounded-lg bg-gradient-to-r from-purple-600 to-indigo-600 text-white hover:from-purple-700 hover:to-indigo-700 dark:from-purple-500 dark:to-indigo-500 dark:hover:from-purple-600 dark:hover:to-indigo-600 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 font-medium"
+            aria-label="Contact me"
+          >
+            Get In Touch
           </a>
         </div>
       </section>
@@ -70,6 +79,124 @@ export default function Home() {
               machine learning, intelligent agents, and generative systems to combine automation
               with human-like reasoning.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* --- FEATURED PROJECTS --- */}
+      <section className="mt-16 w-full max-w-4xl">
+        <div className="flex items-center justify-between mb-8">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white flex items-center gap-3">
+            <span className="w-1 h-8 bg-gradient-to-b from-blue-500 to-purple-500 rounded-full"></span>
+            Featured Projects
+          </h2>
+          <a
+            href="/projects"
+            className="text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline underline-offset-4"
+          >
+            View All →
+          </a>
+        </div>
+        
+        <div className="grid md:grid-cols-2 gap-6">
+          {/* Healthcare RPA Automation Suite */}
+          <div className="group rounded-2xl border border-gray-200/50 dark:border-gray-800/50 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-sm p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] hover-glow">
+            <div className="flex items-start justify-between mb-4">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white">
+                Healthcare RPA Automation Suite
+              </h3>
+              <span className="px-3 py-1 rounded-full text-xs font-semibold bg-green-500/20 text-green-600 dark:text-green-400 border border-green-500/30">
+                Completed
+              </span>
+            </div>
+            <p className="text-gray-700 dark:text-gray-300 mb-4 text-sm leading-relaxed">
+              End-to-end RPA solution for healthcare operations processing, reducing manual effort and improving accuracy.
+            </p>
+            <div className="mb-4">
+              <p className="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-2">
+                Impact
+              </p>
+              <ul className="space-y-1">
+                <li className="text-xs text-gray-700 dark:text-gray-300 flex items-center gap-2">
+                  <span className="text-green-500">✓</span>
+                  <span><strong>$300K+</strong> annual cost savings</span>
+                </li>
+                <li className="text-xs text-gray-700 dark:text-gray-300 flex items-center gap-2">
+                  <span className="text-green-500">✓</span>
+                  <span><strong>11 FTE</strong> reduction</span>
+                </li>
+                <li className="text-xs text-gray-700 dark:text-gray-300 flex items-center gap-2">
+                  <span className="text-green-500">✓</span>
+                  <span><strong>99.2%</strong> accuracy rate</span>
+                </li>
+              </ul>
+            </div>
+            <div className="flex flex-wrap gap-2 mb-4">
+              {["Automation Anywhere", "Python", "SQL"].map((tech) => (
+                <span
+                  key={tech}
+                  className="px-2 py-1 rounded text-xs font-medium bg-gray-100 dark:bg-zinc-800 text-gray-700 dark:text-gray-300"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+            <a
+              href="/projects"
+              className="text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline underline-offset-4 inline-flex items-center gap-1"
+            >
+              Learn more →
+            </a>
+          </div>
+
+          {/* AI Companion Assistant */}
+          <div className="group rounded-2xl border border-gray-200/50 dark:border-gray-800/50 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-sm p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] hover-glow">
+            <div className="flex items-start justify-between mb-4">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white">
+                AI Companion Assistant
+              </h3>
+              <span className="px-3 py-1 rounded-full text-xs font-semibold bg-yellow-500/20 text-yellow-600 dark:text-yellow-400 border border-yellow-500/30">
+                In Progress
+              </span>
+            </div>
+            <p className="text-gray-700 dark:text-gray-300 mb-4 text-sm leading-relaxed">
+              A personalized AI assistant with memory, streaming chat, and task automation capabilities using Vercel AI SDK and OpenAI.
+            </p>
+            <div className="mb-4">
+              <p className="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-2">
+                Features
+              </p>
+              <ul className="space-y-1">
+                <li className="text-xs text-gray-700 dark:text-gray-300 flex items-center gap-2">
+                  <span className="text-blue-500">▸</span>
+                  <span>Conversation memory with Redis</span>
+                </li>
+                <li className="text-xs text-gray-700 dark:text-gray-300 flex items-center gap-2">
+                  <span className="text-blue-500">▸</span>
+                  <span>Streaming chat interface</span>
+                </li>
+                <li className="text-xs text-gray-700 dark:text-gray-300 flex items-center gap-2">
+                  <span className="text-blue-500">▸</span>
+                  <span>Task automation workflows</span>
+                </li>
+              </ul>
+            </div>
+            <div className="flex flex-wrap gap-2 mb-4">
+              {["Next.js", "TypeScript", "OpenAI API"].map((tech) => (
+                <span
+                  key={tech}
+                  className="px-2 py-1 rounded text-xs font-medium bg-gray-100 dark:bg-zinc-800 text-gray-700 dark:text-gray-300"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+            <a
+              href="/projects"
+              className="text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline underline-offset-4 inline-flex items-center gap-1"
+            >
+              Learn more →
+            </a>
           </div>
         </div>
       </section>
@@ -408,6 +535,37 @@ export default function Home() {
               <p className="text-sm text-gray-700 dark:text-gray-300">
                 I'm actively seeking <span className="font-semibold">internships and full-time opportunities</span> in AI/ML engineering, full-stack development, and automation engineering. Particularly interested in roles that combine my RPA expertise with emerging AI technologies.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* --- CALL TO ACTION --- */}
+      <section className="mt-16 w-full max-w-4xl mb-16">
+        <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 dark:from-blue-700 dark:via-purple-700 dark:to-indigo-700 p-8 sm:p-12 text-center shadow-2xl">
+          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4xIj48Y2lyY2xlIGN4PSIzMCIgY3k9IjMwIiByPSIyIi8+PC9nPjwvZz48L3N2Zz4=')] opacity-20"></div>
+          <div className="relative z-10">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+              Let's Work Together
+            </h2>
+            <p className="text-lg text-blue-100 mb-8 max-w-2xl mx-auto">
+              I'm actively seeking opportunities in AI/ML engineering, full-stack development, and automation engineering. Let's connect and discuss how we can collaborate!
+            </p>
+            <div className="flex flex-wrap gap-4 justify-center">
+              <a
+                href="/contact"
+                className="px-8 py-3 rounded-lg bg-white text-blue-600 hover:bg-blue-50 dark:bg-white dark:hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 font-semibold"
+              >
+                Get In Touch
+              </a>
+              <a
+                href="https://www.linkedin.com/in/agokulakrishna"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-3 rounded-lg bg-transparent border-2 border-white text-white hover:bg-white/10 transition-all duration-300 font-semibold"
+              >
+                Connect on LinkedIn
+              </a>
             </div>
           </div>
         </div>

@@ -81,6 +81,29 @@ export default function Home() {
           <span className="w-1 h-8 bg-gradient-to-b from-blue-500 to-purple-500 rounded-full"></span>
           Experience
         </h2>
+        
+        {/* Timeline */}
+        <div className="relative mb-8">
+          <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 via-purple-500 to-indigo-500"></div>
+          <div className="space-y-8 pl-12">
+            <div className="relative">
+              <div className="absolute -left-[2.25rem] top-1 w-4 h-4 rounded-full bg-blue-500 border-4 border-white dark:border-zinc-900 shadow-lg"></div>
+              <div className="text-xs font-semibold text-blue-600 dark:text-blue-400 mb-1">Nov 2022 - Jul 2024</div>
+              <div className="text-xs text-gray-500 dark:text-gray-400">1 year 8 months</div>
+            </div>
+            <div className="relative">
+              <div className="absolute -left-[2.25rem] top-1 w-4 h-4 rounded-full bg-purple-500 border-4 border-white dark:border-zinc-900 shadow-lg"></div>
+              <div className="text-xs font-semibold text-purple-600 dark:text-purple-400 mb-1">Nov 2020 - Nov 2022</div>
+              <div className="text-xs text-gray-500 dark:text-gray-400">2 years</div>
+            </div>
+            <div className="relative">
+              <div className="absolute -left-[2.25rem] top-1 w-4 h-4 rounded-full bg-indigo-500 border-4 border-white dark:border-zinc-900 shadow-lg"></div>
+              <div className="text-xs font-semibold text-indigo-600 dark:text-indigo-400 mb-1">Mar 2019 - Nov 2020</div>
+              <div className="text-xs text-gray-500 dark:text-gray-400">1 year 8 months</div>
+            </div>
+          </div>
+        </div>
+
         <div className="space-y-6">
           {/* Sagility Health */}
           <div className="group rounded-2xl border border-gray-200/50 dark:border-gray-800/50 p-6 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-sm shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] hover-glow">
@@ -93,7 +116,7 @@ export default function Home() {
                   Sagility Health
                 </p>
                 <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                  Nov 2022 – Jul 2024 · Coimbatore, India
+                  Nov 2022 – Jul 2024 · Coimbatore, India · <span className="font-medium">1 year 8 months</span>
                 </p>
               </div>
             </div>
@@ -128,7 +151,7 @@ export default function Home() {
                   TaskUs
                 </p>
                 <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                  Nov 2020 – Nov 2022 · Indore, India
+                  Nov 2020 – Nov 2022 · Indore, India · <span className="font-medium">2 years</span>
                 </p>
               </div>
             </div>
@@ -163,7 +186,7 @@ export default function Home() {
                   VRBotz
                 </p>
                 <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                  Mar 2019 – Nov 2020 · Bangalore, India
+                  Mar 2019 – Nov 2020 · Bangalore, India · <span className="font-medium">1 year 8 months</span>
                 </p>
               </div>
             </div>
@@ -237,25 +260,155 @@ export default function Home() {
 
         {/* Skills */}
         <div>
-          <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+          <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-6">
             Technical Skills
           </h3>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-            {[
-              "Automation Anywhere (AA360 / 2019)",
-              "WorkFusion · UiPath (Basics)",
-              "Python · VBA · Excel Automation",
-              "Machine Learning · AI Agents · RAG",
-              "Web Automation · API Integration",
-              "SDLC · Unit Testing · Hypercare"
-            ].map((skill, index) => (
-              <div
-                key={index}
-                className="rounded-lg border border-gray-200/50 dark:border-gray-800/50 p-3 text-center bg-white/80 dark:bg-zinc-900/80 backdrop-blur-sm shadow-sm hover:shadow-md hover:scale-105 transition-all duration-300 text-sm font-medium text-gray-700 dark:text-gray-300"
-              >
-                {skill}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* RPA Platforms */}
+            <div className="rounded-xl border border-gray-200/50 dark:border-gray-800/50 p-5 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-sm shadow-sm">
+              <h4 className="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-3">
+                RPA Platforms
+              </h4>
+              <div className="space-y-2">
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-gray-700 dark:text-gray-300">Automation Anywhere (AA360)</span>
+                  <span className="text-xs text-blue-600 dark:text-blue-400 font-medium">Expert</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-gray-700 dark:text-gray-300">WorkFusion</span>
+                  <span className="text-xs text-blue-600 dark:text-blue-400 font-medium">Advanced</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-gray-700 dark:text-gray-300">UiPath</span>
+                  <span className="text-xs text-gray-500 dark:text-gray-400 font-medium">Basic</span>
+                </div>
               </div>
-            ))}
+            </div>
+
+            {/* Programming & Automation */}
+            <div className="rounded-xl border border-gray-200/50 dark:border-gray-800/50 p-5 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-sm shadow-sm">
+              <h4 className="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-3">
+                Programming & Automation
+              </h4>
+              <div className="space-y-2">
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-gray-700 dark:text-gray-300">Python</span>
+                  <span className="text-xs text-blue-600 dark:text-blue-400 font-medium">Advanced</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-gray-700 dark:text-gray-300">VBA · Excel Automation</span>
+                  <span className="text-xs text-blue-600 dark:text-blue-400 font-medium">Expert</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-gray-700 dark:text-gray-300">Web Automation</span>
+                  <span className="text-xs text-blue-600 dark:text-blue-400 font-medium">Advanced</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-gray-700 dark:text-gray-300">API Integration</span>
+                  <span className="text-xs text-blue-600 dark:text-blue-400 font-medium">Advanced</span>
+                </div>
+              </div>
+            </div>
+
+            {/* AI & Machine Learning */}
+            <div className="rounded-xl border border-gray-200/50 dark:border-gray-800/50 p-5 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-sm shadow-sm">
+              <h4 className="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-3">
+                AI & Machine Learning
+              </h4>
+              <div className="space-y-2">
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-gray-700 dark:text-gray-300">Machine Learning</span>
+                  <span className="text-xs text-purple-600 dark:text-purple-400 font-medium">Learning</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-gray-700 dark:text-gray-300">AI Agents</span>
+                  <span className="text-xs text-purple-600 dark:text-purple-400 font-medium">Learning</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-gray-700 dark:text-gray-300">RAG Systems</span>
+                  <span className="text-xs text-purple-600 dark:text-purple-400 font-medium">Learning</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Full-Stack Development */}
+            <div className="rounded-xl border border-gray-200/50 dark:border-gray-800/50 p-5 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-sm shadow-sm">
+              <h4 className="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-3">
+                Full-Stack Development
+              </h4>
+              <div className="space-y-2">
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-gray-700 dark:text-gray-300">Next.js · React</span>
+                  <span className="text-xs text-purple-600 dark:text-purple-400 font-medium">Learning</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-gray-700 dark:text-gray-300">TypeScript</span>
+                  <span className="text-xs text-purple-600 dark:text-purple-400 font-medium">Learning</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-gray-700 dark:text-gray-300">PostgreSQL</span>
+                  <span className="text-xs text-purple-600 dark:text-purple-400 font-medium">Learning</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Development Practices */}
+            <div className="rounded-xl border border-gray-200/50 dark:border-gray-800/50 p-5 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-sm shadow-sm">
+              <h4 className="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-3">
+                Development Practices
+              </h4>
+              <div className="space-y-2">
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-gray-700 dark:text-gray-300">SDLC</span>
+                  <span className="text-xs text-blue-600 dark:text-blue-400 font-medium">Expert</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-gray-700 dark:text-gray-300">Unit Testing</span>
+                  <span className="text-xs text-blue-600 dark:text-blue-400 font-medium">Advanced</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-gray-700 dark:text-gray-300">Hypercare & Support</span>
+                  <span className="text-xs text-blue-600 dark:text-blue-400 font-medium">Expert</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* --- FUTURE & OPPORTUNITIES --- */}
+      <section className="mt-16 w-full max-w-4xl mb-16">
+        <div className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-950/20 dark:to-purple-950/20 rounded-2xl border border-blue-200/50 dark:border-blue-800/50 p-8 shadow-xl">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-3">
+            <span className="w-1 h-8 bg-gradient-to-b from-blue-500 to-purple-500 rounded-full"></span>
+            What I'm Working On Next
+          </h2>
+          <div className="space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed">
+            <p className="text-base sm:text-lg">
+              Currently pursuing my <span className="font-semibold text-blue-600 dark:text-blue-400">Master's in Computer Science</span> at Binghamton University, I'm actively expanding my expertise in <span className="font-semibold text-purple-600 dark:text-purple-400">AI and full-stack development</span>. My focus areas include:
+            </p>
+            <ul className="space-y-2 ml-4">
+              <li className="flex items-start gap-2">
+                <span className="text-blue-500 mt-1.5">▸</span>
+                <span>Building intelligent AI agents and RAG systems that combine automation with human-like reasoning</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-blue-500 mt-1.5">▸</span>
+                <span>Developing full-stack applications with modern frameworks (Next.js, React, TypeScript)</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-blue-500 mt-1.5">▸</span>
+                <span>Exploring machine learning and generative AI to create innovative automation solutions</span>
+              </li>
+            </ul>
+            <div className="mt-6 p-4 rounded-lg bg-white/60 dark:bg-zinc-900/60 border border-blue-200/50 dark:border-blue-800/50">
+              <p className="text-base font-semibold text-gray-900 dark:text-white mb-2">
+                Open to Opportunities
+              </p>
+              <p className="text-sm text-gray-700 dark:text-gray-300">
+                I'm actively seeking <span className="font-semibold">internships and full-time opportunities</span> in AI/ML engineering, full-stack development, and automation engineering. Particularly interested in roles that combine my RPA expertise with emerging AI technologies.
+              </p>
+            </div>
           </div>
         </div>
       </section>

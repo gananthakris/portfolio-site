@@ -15,8 +15,20 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Gokulkrishna A – Portfolio",
-  description: "Automation Engineer (RPA) • AI Enthusiast • Full-stack Learner",
+  title: "Gokulkrishna A – Automation Engineer & AI Enthusiast | Portfolio",
+  description: "Automation Engineer (RPA) with 5+ years of experience. Master's student in Computer Science at Binghamton University. Specialized in RPA, AI, and full-stack development. Open to opportunities in AI/ML engineering and automation.",
+  keywords: ["Gokulkrishna A", "Automation Engineer", "RPA Developer", "AI Enthusiast", "Full-stack Developer", "Binghamton University", "Automation Anywhere", "Python", "Machine Learning"],
+  authors: [{ name: "Gokulkrishna A" }],
+  openGraph: {
+    title: "Gokulkrishna A – Automation Engineer & AI Enthusiast",
+    description: "Automation Engineer (RPA) with 5+ years of experience. Master's student in Computer Science at Binghamton University.",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Gokulkrishna A – Automation Engineer & AI Enthusiast",
+    description: "Automation Engineer (RPA) with 5+ years of experience. Master's student in Computer Science at Binghamton University.",
+  },
 };
 
 export default function RootLayout({

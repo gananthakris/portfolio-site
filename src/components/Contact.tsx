@@ -56,13 +56,13 @@ export function Contact() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4 text-gray-900 dark:text-white">
-            Get In Touch
+          <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-gray-900 dark:text-white">
+            Let's Build Something Together
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full mb-4"></div>
           <p className="text-lg text-gray-600 dark:text-gray-400 mt-4 max-w-2xl mx-auto">
             I'm actively seeking opportunities in AI/ML engineering, full-stack
-            development, and automation engineering. Let's connect!
+            development, and automation engineering. Let's connect and create something amazing!
           </p>
         </motion.div>
 

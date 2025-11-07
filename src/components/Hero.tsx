@@ -3,6 +3,8 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { MagneticButton } from "./MagneticButton";
+import { TypingEffect } from "./TypingEffect";
+import { ParticleBackground } from "./ParticleBackground";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -30,6 +32,9 @@ const itemVariants = {
 export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-black dark:via-zinc-950 dark:to-zinc-900">
+      {/* Particle Background */}
+      <ParticleBackground />
+      
       {/* Animated gradient background */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -96,28 +101,17 @@ export function Hero() {
           </div>
         </motion.div>
 
-        {/* Animated Headline */}
+        {/* Animated Headline with Typing Effect */}
         <motion.h1
           variants={itemVariants}
           className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6"
         >
-          <span className="text-gray-900 dark:text-white">Hi, I'm </span>
-          <motion.span
-            className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent"
-            animate={{
-              backgroundPosition: ["0%", "100%", "0%"],
-            }}
-            transition={{
-              duration: 5,
-              repeat: Infinity,
-              ease: "linear",
-            }}
-            style={{
-              backgroundSize: "200% auto",
-            }}
-          >
-            Gokulkrishna A
-          </motion.span>
+          <span className="text-gray-900 dark:text-white">
+            <TypingEffect text="Hi, I'm " speed={80} />
+          </span>
+          <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
+            <TypingEffect text="Gokulkrishna A" speed={100} />
+          </span>
         </motion.h1>
 
         <motion.p

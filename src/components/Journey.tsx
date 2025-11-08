@@ -50,7 +50,7 @@ export function Journey() {
           <h2 className="text-4xl font-bold mb-4 text-gray-900 dark:text-white">
             My Journey
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-600 mx-auto rounded-full"></div>
         </motion.div>
 
         {/* Timeline */}
@@ -67,7 +67,7 @@ export function Journey() {
                 className="relative pl-0 md:pl-20"
               >
                 <div className="absolute left-0 md:left-6 top-2">
-                  <div className="w-4 h-4 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 border-4 border-white dark:border-zinc-900 shadow-lg"></div>
+                  <div className="w-4 h-4 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-violet-500 border-4 border-white dark:border-zinc-900 shadow-lg"></div>
                 </div>
                 <motion.div
                   whileHover={{ scale: 1.02, x: 10 }}

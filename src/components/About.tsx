@@ -22,7 +22,7 @@ export function About() {
             className="flex-shrink-0"
           >
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full blur-2xl opacity-30"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 via-purple-500 to-violet-500 rounded-full blur-2xl opacity-30"></div>
               <Image
                 src="/Gokul.jpeg"
                 alt="Gokulkrishna A"
@@ -43,7 +43,7 @@ export function About() {
             <h2 className="text-4xl font-bold mb-6 text-gray-900 dark:text-white">
               About Me
             </h2>
-            <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mb-6 rounded-full"></div>
+            <div className="w-20 h-1 bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-600 mb-6 rounded-full"></div>
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
               From building production-grade RPA bots that saved{" "}
               <span className="font-semibold text-blue-600 dark:text-blue-400">

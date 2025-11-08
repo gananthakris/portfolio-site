@@ -104,13 +104,28 @@ export function Hero() {
         {/* Animated Headline with Typing Effect */}
         <motion.h1
           variants={itemVariants}
-          className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6"
+          className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 relative"
         >
           <span className="text-gray-900 dark:text-white">
             <TypingEffect text="Hi, I'm " speed={80} />
           </span>
-          <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-600 bg-clip-text text-transparent">
-            <TypingEffect text="Gokulkrishna A" speed={100} />
+          <span className="relative inline-block">
+            {/* Glow accent under name */}
+            <motion.span
+              className="absolute -inset-2 bg-gradient-to-r from-indigo-500/30 via-purple-500/30 to-violet-500/30 blur-2xl rounded-lg"
+              animate={{
+                opacity: [0.3, 0.5, 0.3],
+                scale: [1, 1.1, 1],
+              }}
+              transition={{
+                duration: 3,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+            />
+            <span className="relative bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-600 bg-clip-text text-transparent">
+              <TypingEffect text="Gokulkrishna A" speed={100} />
+            </span>
           </span>
         </motion.h1>
 

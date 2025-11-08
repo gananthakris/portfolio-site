@@ -72,12 +72,12 @@ export function Experience() {
           <h2 className="text-4xl font-bold mb-4 text-gray-900 dark:text-white">
             Experience
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-600 mx-auto rounded-full"></div>
         </motion.div>
 
         <div className="relative">
           {/* Timeline line */}
-          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 via-purple-500 to-indigo-500 hidden md:block"></div>
+          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-indigo-500 via-purple-500 to-violet-500 hidden md:block"></div>
 
           <div className="space-y-12">
             {experiences.map((exp, index) => (

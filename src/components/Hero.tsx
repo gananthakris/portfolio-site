@@ -109,7 +109,7 @@ export function Hero() {
           <span className="text-gray-900 dark:text-white">
             <TypingEffect text="Hi, I'm " speed={80} />
           </span>
-          <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-600 bg-clip-text text-transparent">
             <TypingEffect text="Gokulkrishna A" speed={100} />
           </span>
         </motion.h1>
@@ -136,7 +136,7 @@ export function Hero() {
         >
           <MagneticButton
             href="/projects"
-            className="px-8 py-4 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold shadow-lg hover:shadow-xl transition-all"
+            className="px-8 py-4 rounded-xl bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-600 text-white font-semibold shadow-lg hover:shadow-xl transition-all"
           >
             View Projects
           </MagneticButton>

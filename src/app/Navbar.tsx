@@ -60,7 +60,7 @@ export default function Navbar() {
             <ThemeToggle />
             <Link
               href="/#contact"
-              className="px-4 py-2 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-md hover:shadow-lg font-medium text-sm"
+              className="px-4 py-2 rounded-lg bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-600 text-white hover:from-indigo-700 hover:via-purple-700 hover:to-violet-700 transition-all duration-300 shadow-md hover:shadow-lg font-medium text-sm"
             >
               Contact
             </Link>

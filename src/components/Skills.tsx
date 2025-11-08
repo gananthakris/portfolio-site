@@ -5,44 +5,38 @@ import { useEffect, useState } from "react";
 
 const skillCategories = [
   {
-    category: "RPA Platforms",
+    category: "Languages",
     skills: [
-      { name: "Automation Anywhere (AA360)", level: 95 },
-      { name: "WorkFusion", level: 85 },
-      { name: "UiPath", level: 60 },
+      { name: "Python", level: 90, recentlyUsed: true },
+      { name: "TypeScript", level: 82, recentlyUsed: true },
+      { name: "JavaScript", level: 85, recentlyUsed: true },
+      { name: "SQL", level: 88, recentlyUsed: false },
     ],
   },
   {
-    category: "Programming & Automation",
+    category: "Frameworks",
     skills: [
-      { name: "Python", level: 90 },
-      { name: "VBA · Excel Automation", level: 95 },
-      { name: "Web Automation", level: 85 },
-      { name: "API Integration", level: 88 },
+      { name: "Next.js · React", level: 80, recentlyUsed: true },
+      { name: "Tailwind CSS", level: 85, recentlyUsed: true },
+      { name: "Node.js", level: 75, recentlyUsed: true },
     ],
   },
   {
-    category: "AI & Machine Learning",
+    category: "Automation Tools",
     skills: [
-      { name: "Machine Learning", level: 70 },
-      { name: "AI Agents", level: 75 },
-      { name: "RAG Systems", level: 72 },
+      { name: "Automation Anywhere (AA360)", level: 95, recentlyUsed: false },
+      { name: "WorkFusion", level: 85, recentlyUsed: false },
+      { name: "UiPath", level: 60, recentlyUsed: false },
+      { name: "VBA · Excel", level: 95, recentlyUsed: false },
     ],
   },
   {
-    category: "Full-Stack Development",
+    category: "AI/ML Stack",
     skills: [
-      { name: "Next.js · React", level: 80 },
-      { name: "TypeScript", level: 82 },
-      { name: "PostgreSQL", level: 75 },
-    ],
-  },
-  {
-    category: "Development Practices",
-    skills: [
-      { name: "SDLC", level: 95 },
-      { name: "Unit Testing", level: 85 },
-      { name: "Hypercare & Support", level: 95 },
+      { name: "Machine Learning", level: 70, recentlyUsed: true },
+      { name: "AI Agents", level: 75, recentlyUsed: true },
+      { name: "RAG Systems", level: 72, recentlyUsed: true },
+      { name: "LLMs", level: 70, recentlyUsed: true },
     ],
   },
 ];
@@ -156,9 +150,16 @@ export function Skills() {
                   >
                     <ProgressRing progress={skill.level} size={70} />
                     <div className="flex-1">
-                      <p className="text-sm font-medium text-gray-900 dark:text-white mb-1">
-                        {skill.name}
-                      </p>
+                      <div className="flex items-center justify-between mb-1">
+                        <p className="text-sm font-medium text-gray-900 dark:text-white">
+                          {skill.name}
+                        </p>
+                        {skill.recentlyUsed && (
+                          <span className="px-2 py-0.5 rounded text-xs font-medium bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300">
+                            Recent
+                          </span>
+                        )}
+                      </div>
                       <div className="w-full bg-gray-200 dark:bg-gray-800 rounded-full h-2">
                         <motion.div
                           initial={{ width: 0 }}
@@ -169,7 +170,7 @@ export function Skills() {
                             delay: categoryIndex * 0.1 + skillIndex * 0.1,
                             ease: "easeOut",
                           }}
-                          className="h-2 rounded-full bg-gradient-to-r from-blue-600 to-purple-600"
+                          className="h-2 rounded-full bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-600"
                         />
                       </div>
                     </div>

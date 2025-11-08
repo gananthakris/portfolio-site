@@ -118,7 +118,14 @@ export function Hero() {
           variants={itemVariants}
           className="text-xl sm:text-2xl text-gray-700 dark:text-gray-300 mb-4 font-medium"
         >
-          AI Automation Engineer
+          AI & Automation Engineer
+        </motion.p>
+
+        <motion.p
+          variants={itemVariants}
+          className="text-base sm:text-lg text-gray-600 dark:text-gray-400 mb-2 max-w-3xl mx-auto italic"
+        >
+          Turning complexity into intelligent systems
         </motion.p>
 
         <motion.p
@@ -135,10 +142,10 @@ export function Hero() {
           className="flex flex-wrap gap-4 justify-center items-center"
         >
           <MagneticButton
-            href="/projects"
+            href="/#projects"
             className="px-8 py-4 rounded-xl bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-600 text-white font-semibold shadow-lg hover:shadow-xl transition-all"
           >
-            View Projects
+            View My Projects
           </MagneticButton>
           <MagneticButton
             href="/resume.pdf"

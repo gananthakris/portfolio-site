@@ -17,24 +17,36 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Gokulkrishna A | AI Automation Engineer",
-  description: "Portfolio showcasing RPA, AI, and Full-Stack Automation projects. Automation Engineer with 5+ years of experience. Master's student in Computer Science at Binghamton University.",
+  title: "Gokulkrishna A | AI & Automation Engineer",
+  description: "Portfolio showcasing AI, RPA, and full-stack automation projects. Automation Engineer with 5+ years of experience. Master's student in Computer Science at Binghamton University.",
   keywords: ["Gokulkrishna A", "AI Automation Engineer", "RPA Developer", "AI Enthusiast", "Full-stack Developer", "Binghamton University", "Automation Anywhere", "Python", "Machine Learning", "Next.js", "TypeScript"],
   authors: [{ name: "Gokulkrishna A" }],
   openGraph: {
-    title: "Gokulkrishna A | AI Automation Engineer",
-    description: "Portfolio showcasing RPA, AI, and Full-Stack Automation projects.",
+    title: "Gokulkrishna A | AI & Automation Engineer",
+    description: "Portfolio showcasing AI, RPA, and full-stack automation projects.",
     type: "website",
     url: "https://gokulai.dev",
+    images: [
+      {
+        url: "https://gokulai.dev/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Gokulkrishna A - AI & Automation Engineer",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Gokulkrishna A | AI Automation Engineer",
-    description: "Portfolio showcasing RPA, AI, and Full-Stack Automation projects.",
+    title: "Gokulkrishna A | AI & Automation Engineer",
+    description: "Portfolio showcasing AI, RPA, and full-stack automation projects.",
   },
   robots: {
     index: true,
     follow: true,
+  },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
   },
 };
 

@@ -30,10 +30,10 @@ const journeySteps = [
 ];
 
 const currentFocus = [
-  "LLMs & RAG Systems",
-  "AI Agents & Automation",
+  "LLMs + RAG",
+  "AI Agents",
+  "Intelligent Automation",
   "Full-Stack Development",
-  "Generative AI",
 ];
 
 export function Journey() {
@@ -101,10 +101,10 @@ export function Journey() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-950/20 dark:to-purple-950/20 rounded-2xl p-8 border border-blue-200/50 dark:border-blue-800/50"
+          className="bg-gradient-to-r from-indigo-50 via-purple-50 to-violet-50 dark:from-indigo-950/20 dark:via-purple-950/20 dark:to-violet-950/20 rounded-2xl p-8 border border-indigo-200/50 dark:border-indigo-800/50"
         >
           <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-            Currently Exploring →
+            Currently Exploring → <span className="text-indigo-600 dark:text-indigo-400">LLMs + RAG + Agents</span>
           </h3>
           <div className="flex flex-wrap gap-3">
             {currentFocus.map((item, index) => (
@@ -114,8 +114,8 @@ export function Journey() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                whileHover={{ scale: 1.05 }}
-                className="px-4 py-2 rounded-lg bg-white dark:bg-zinc-900 text-gray-900 dark:text-white font-medium shadow-sm border border-gray-200 dark:border-gray-800"
+                whileHover={{ scale: 1.05, y: -2 }}
+                className="px-4 py-2 rounded-lg bg-white dark:bg-zinc-900 text-gray-900 dark:text-white font-medium shadow-sm border border-gray-200 dark:border-gray-800 hover:border-indigo-300 dark:hover:border-indigo-700 transition-colors"
               >
                 {item}
               </motion.span>

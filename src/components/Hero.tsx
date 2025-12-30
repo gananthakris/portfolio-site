@@ -164,8 +164,21 @@ export function Hero() {
           </MagneticButton>
           <MagneticButton
             href="/resume.pdf"
-            download
+            download="Gokulkrishna_A_Resume.pdf"
             className="px-8 py-4 rounded-xl border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-zinc-900 text-gray-900 dark:text-white font-semibold hover:bg-gray-50 dark:hover:bg-zinc-800 transition-all"
+            onClick={async (e) => {
+              // Check if file exists, if not, open email instead
+              try {
+                const response = await fetch("/resume.pdf", { method: "HEAD" });
+                if (!response.ok) {
+                  e.preventDefault();
+                  window.location.href = "mailto:gananthakris@binghamton.edu?subject=Resume Request&body=Hi Gokulkrishna, I'd like to request your resume.";
+                }
+              } catch {
+                e.preventDefault();
+                window.location.href = "mailto:gananthakris@binghamton.edu?subject=Resume Request&body=Hi Gokulkrishna, I'd like to request your resume.";
+              }
+            }}
           >
             Download Resume
           </MagneticButton>

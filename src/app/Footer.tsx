@@ -41,9 +41,22 @@ export default function Footer() {
               </motion.a>
               <motion.a
                 href="/resume.pdf"
-                download
+                download="Gokulkrishna_A_Resume.pdf"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                onClick={async (e) => {
+                  // Check if file exists, if not, open email instead
+                  try {
+                    const response = await fetch("/resume.pdf", { method: "HEAD" });
+                    if (!response.ok) {
+                      e.preventDefault();
+                      window.location.href = "mailto:gananthakris@binghamton.edu?subject=Resume Request&body=Hi Gokulkrishna, I'd like to request your resume.";
+                    }
+                  } catch {
+                    e.preventDefault();
+                    window.location.href = "mailto:gananthakris@binghamton.edu?subject=Resume Request&body=Hi Gokulkrishna, I'd like to request your resume.";
+                  }
+                }}
                 className="px-4 py-2 rounded-lg bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-600 text-white text-sm font-medium hover:from-indigo-700 hover:via-purple-700 hover:to-violet-700 transition-all shadow-md hover:shadow-lg flex items-center gap-2"
               >
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">

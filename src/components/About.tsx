@@ -45,31 +45,21 @@ export function About() {
             </h2>
             <div className="w-20 h-1 bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-600 mb-6 rounded-full"></div>
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-              From building production-grade RPA bots that saved{" "}
-              <span className="font-semibold text-blue-600 dark:text-blue-400">
-                $300K+ annually
-              </span>{" "}
-              to pursuing my Master's in Computer Science at{" "}
+              I'm currently pursuing my Master's in Computer Science at{" "}
               <span className="font-semibold text-purple-600 dark:text-purple-400">
                 Binghamton University
               </span>
-              , my journey has been about transforming automation into intelligent
-              systems.
+              , building on over five years of experience in RPA automation, Python development, and process optimization.
             </p>
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-              With over five years of experience in Automation Anywhere, WorkFusion,
-              and Python, I've led teams, architected scalable solutions, and delivered
-              measurable business impact. Now, I'm expanding into{" "}
+              My background includes working with Automation Anywhere, WorkFusion, and Python to build automation solutions. I'm now expanding into{" "}
               <span className="font-semibold text-indigo-600 dark:text-indigo-400">
-                AI and full-stack development
+                AI, full-stack development, and product management
               </span>
-              , exploring machine learning, intelligent agents, and generative systems
-              to create automation that thinks.
+              , with a particular interest in product discovery, user research, and building solutions that solve real problems.
             </p>
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-              I'm actively seeking opportunities where I can combine my RPA expertise
-              with emerging AI technologies to build the next generation of intelligent
-              automation solutions.
+              I'm interested in opportunities that combine technical execution with product thinking—whether that's in AI/ML engineering, automation, or product management roles where I can contribute to discovery, design, and delivery.
             </p>
           </motion.div>
         </motion.div>

@@ -6,9 +6,9 @@ import { useRef, type ReactNode } from "react";
 interface MagneticButtonProps {
   children: ReactNode;
   href?: string;
-  download?: boolean;
+  download?: boolean | string;
   className?: string;
-  onClick?: () => void;
+  onClick?: (e: React.MouseEvent) => void;
 }
 
 export function MagneticButton({
@@ -77,6 +77,7 @@ export function MagneticButton({
         ref={ref as React.RefObject<HTMLAnchorElement>}
         href={href}
         download={download}
+        onClick={onClick}
         className={className}
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}

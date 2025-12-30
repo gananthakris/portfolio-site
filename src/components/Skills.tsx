@@ -39,6 +39,15 @@ const skillCategories = [
       { name: "LLMs", level: 70, recentlyUsed: true },
     ],
   },
+  {
+    category: "Product & Discovery",
+    skills: [
+      { name: "Product Discovery", level: 75, recentlyUsed: true },
+      { name: "User Research", level: 70, recentlyUsed: true },
+      { name: "Requirements Gathering", level: 85, recentlyUsed: true },
+      { name: "Process Analysis", level: 90, recentlyUsed: true },
+    ],
+  },
 ];
 
 function ProgressRing({ progress, size = 80 }: { progress: number; size?: number }) {

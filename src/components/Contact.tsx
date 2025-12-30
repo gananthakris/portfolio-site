@@ -60,10 +60,10 @@ export function Contact() {
             Let's Build Something Intelligent Together
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-600 mx-auto rounded-full mb-4"></div>
-          <p className="text-lg text-gray-600 dark:text-gray-400 mt-4 max-w-2xl mx-auto">
-            I'm actively seeking opportunities in AI/ML engineering, full-stack
-            development, and automation engineering. Let's connect and create something amazing!
-          </p>
+                  <p className="text-lg text-gray-600 dark:text-gray-400 mt-4 max-w-2xl mx-auto">
+                    I'm actively seeking opportunities in AI/ML engineering, full-stack
+                    development, automation engineering, and product management. I'm particularly interested in roles that involve product discovery, user research, and building intelligent systems. Let's connect!
+                  </p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-12">

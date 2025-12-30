@@ -11,10 +11,10 @@ const experiences = [
     duration: "1 year 8 months",
     color: "blue",
     achievements: [
-      "Led end-to-end RPA solution delivery using Automation Anywhere (AA360) across healthcare operations",
-      "Achieved $300K+ annual cost savings and 11 FTE reduction through high-impact automations",
-      "Owned full SDLC — requirements, development, code review, unit testing, deployment, and hypercare support",
-      "Built reusable bot frameworks, standardized logs, and client-ready reporting dashboards",
+      "Delivered RPA solutions using Automation Anywhere (AA360) for healthcare operations",
+      "Worked on automations that contributed to cost savings and efficiency improvements",
+      "Handled full SDLC — requirements gathering, development, testing, deployment, and support",
+      "Built reusable bot frameworks and standardized logging and reporting",
     ],
   },
   {

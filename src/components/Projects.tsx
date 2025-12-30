@@ -7,84 +7,23 @@ import Image from "next/image";
 const projects = [
   {
     id: 1,
-    title: "Healthcare RPA Automation Suite",
+    title: "Portfolio Website",
     description:
-      "End-to-end RPA solution for healthcare operations processing, reducing manual effort and improving accuracy.",
+      "A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS.",
     problem:
-      "Healthcare operations required manual processing of thousands of claims daily, leading to delays, errors, and high operational costs.",
+      "Needed a professional portfolio to showcase my skills and experience in automation, AI, and product management.",
     solution:
-      "Developed a comprehensive automation suite using Automation Anywhere (AA360) that automated claims processing, eligibility verification, and reporting workflows.",
+      "Built a fully responsive portfolio with dark mode, smooth animations, and optimized performance using modern web technologies.",
     impact: [
-      "$300K+ annual cost savings",
-      "11 FTE reduction",
-      "99.2% accuracy rate (up from 87%)",
-      "60% reduction in processing time",
+      "Fully responsive design",
+      "Optimized for performance and SEO",
+      "Accessible and user-friendly interface",
     ],
-    tech: ["Automation Anywhere (AA360)", "Python", "SQL", "REST APIs"],
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
     status: "Completed",
-    image: "/project-healthcare.jpg", // Placeholder - you can add actual images
-    github: null,
-    demo: null,
-  },
-  {
-    id: 2,
-    title: "AI Companion Assistant",
-    description:
-      "A personalized AI assistant with memory, streaming chat, and task automation capabilities.",
-    problem:
-      "Need for a context-aware AI assistant that can remember conversations, handle complex queries, and automate routine tasks.",
-    solution:
-      "Built an intelligent AI companion using Vercel AI SDK and OpenAI APIs with Redis for persistent memory and streaming responses.",
-    impact: [
-      "90% faster response time with streaming",
-      "Context retention across 50+ conversation turns",
-      "Task automation for 10+ common workflows",
-    ],
-    tech: ["Next.js", "TypeScript", "Vercel AI SDK", "OpenAI API", "Redis"],
-    status: "In Progress",
-    image: "/project-ai.jpg",
+    image: null,
     github: "https://github.com/gananthakris",
-    demo: null,
-  },
-  {
-    id: 3,
-    title: "RPA Monitoring Dashboard",
-    description:
-      "Centralized RPA monitoring tool to visualize bot runs, FTE savings, and logs using real-time API data.",
-    problem:
-      "Lack of visibility into bot performance, making it difficult to track ROI, identify bottlenecks, and optimize automation workflows.",
-    solution:
-      "Developed a comprehensive dashboard that aggregates data from multiple RPA platforms and provides real-time insights.",
-    impact: [
-      "Real-time visibility into 20+ active bots",
-      "Automated weekly reports saving 4 hours/week",
-      "Identified optimization opportunities leading to 15% efficiency gains",
-    ],
-    tech: ["React", "Tailwind CSS", "Flask", "PostgreSQL", "Chart.js"],
-    status: "Completed",
-    image: "/project-dashboard.jpg",
-    github: null,
-    demo: null,
-  },
-  {
-    id: 4,
-    title: "Social Media Mini-App",
-    description:
-      "A full-stack social media application with authentication, real-time updates, and interactive features.",
-    problem:
-      "Learning project to understand modern full-stack development patterns, state management, and real-time data synchronization.",
-    solution:
-      "Built a complete social media app with user authentication, posts, likes, comments, and real-time notifications.",
-    impact: [
-      "Handles 1000+ concurrent users",
-      "Sub-200ms response time for real-time updates",
-      "Production-ready authentication system",
-    ],
-    tech: ["Next.js", "Prisma", "PostgreSQL", "NextAuth.js", "WebSockets"],
-    status: "Planned",
-    image: "/project-social.jpg",
-    github: null,
-    demo: null,
+    demo: "https://gokulai.dev",
   },
 ];
 
@@ -106,8 +45,7 @@ export function Projects() {
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-600 mx-auto rounded-full"></div>
           <p className="text-lg text-gray-600 dark:text-gray-400 mt-4 max-w-2xl mx-auto">
-            A collection of my work showcasing automation, AI, and full-stack
-            development
+            Projects and work I've been building and learning from
           </p>
         </motion.div>
 

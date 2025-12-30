@@ -142,30 +142,6 @@ export function Experience() {
                     ))}
                   </ul>
 
-                  {/* Impact metrics highlight */}
-                  {index === 0 && (
-                    <motion.div
-                      initial={{ opacity: 0, scale: 0.9 }}
-                      whileInView={{ opacity: 1, scale: 1 }}
-                      viewport={{ once: true }}
-                      className="mt-6 p-4 rounded-lg bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-950/20 dark:to-emerald-950/20 border border-green-200 dark:border-green-800"
-                    >
-                      <p className="text-sm font-semibold text-green-800 dark:text-green-300 mb-2">
-                        Key Impact Metrics:
-                      </p>
-                      <div className="flex flex-wrap gap-4 text-sm">
-                        <span className="text-green-700 dark:text-green-400">
-                          <strong>$300K+</strong> annual savings
-                        </span>
-                        <span className="text-green-700 dark:text-green-400">
-                          <strong>11 FTE</strong> reduction
-                        </span>
-                        <span className="text-green-700 dark:text-green-400">
-                          <strong>99.2%</strong> accuracy
-                        </span>
-                      </div>
-                    </motion.div>
-                  )}
                 </motion.div>
               </motion.div>
             ))}

@@ -6,7 +6,9 @@
 @theme {
   --color-sg-blue: #2563eb;
   --color-sg-blue-dark: #1e40af;
+  --color-sg-blue-light: #3b82f6;
   --color-sg-green: #10b981;
+  --color-sg-purple: #8b5cf6;
 }
 
 /* Typography */

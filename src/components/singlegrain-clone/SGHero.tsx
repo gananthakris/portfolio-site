@@ -6,7 +6,7 @@ import { hero, pillars } from "@/lib/singlegrain-real-content";
 
 export default function SGHero() {
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-20 bg-white">
+    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-20 bg-gradient-to-b from-blue-50/30 via-white to-white">
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center">
           <motion.div

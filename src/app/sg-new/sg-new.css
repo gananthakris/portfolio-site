@@ -1,0 +1,83 @@
+/* Single Grain - Fresh Light Theme with Gradients */
+
+@import "tailwindcss";
+
+@theme {
+  --color-sg-blue: #2563eb;
+  --color-sg-blue-light: #3b82f6;
+  --color-sg-blue-dark: #1e40af;
+  --color-sg-accent: #10b981;
+  --color-sg-purple: #8b5cf6;
+}
+
+/* Gradient Backgrounds */
+.gradient-hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+}
+
+.gradient-section {
+  background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+}
+
+.gradient-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+}
+
+/* Typography */
+.heading-xl {
+  @apply text-5xl md:text-7xl font-bold tracking-tight;
+}
+
+.heading-lg {
+  @apply text-3xl md:text-5xl font-bold tracking-tight;
+}
+
+.heading-md {
+  @apply text-2xl md:text-3xl font-bold;
+}
+
+/* Cards */
+.card {
+  @apply bg-white rounded-2xl shadow-lg p-8 border border-gray-100;
+  transition: all 0.3s ease;
+}
+
+.card-hover {
+  @apply hover:shadow-2xl hover:-translate-y-1;
+}
+
+/* Buttons */
+.btn-primary {
+  @apply px-8 py-4 bg-sg-blue text-white rounded-lg font-semibold text-lg hover:bg-sg-blue-dark transition-all duration-300 shadow-lg hover:shadow-xl;
+}
+
+.btn-secondary {
+  @apply px-8 py-4 bg-transparent border-2 border-sg-blue text-sg-blue rounded-lg font-semibold text-lg hover:bg-sg-blue hover:text-white transition-all duration-300;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Section Spacing */
+.section-padding {
+  @apply py-20 md:py-32;
+}
+
+/* Clean whitespace */
+.container-padding {
+  @apply px-4 sm:px-6 lg:px-8;
+}
+

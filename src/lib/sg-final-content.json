@@ -1,0 +1,622 @@
+{
+  "home": {
+    "seo": {
+      "title": "Single Grain | The Marketing Partner That Companies Never Outgrow",
+      "description": "Average 3.2x ROI • Trusted by 500+ companies • AI-forward digital marketing that helps you get found everywhere. SEO, Paid Media, Content, CRO."
+    },
+    "hero": {
+      "headline": "The marketing partner that companies never outgrow",
+      "subheadline": "We help you get found everywhere",
+      "description": "AI-forward marketing that scales. We build systems, not just campaigns. Trusted by 500+ companies to deliver measurable growth.",
+      "primaryCTA": "Work With Us",
+      "secondaryCTA": "View Case Studies"
+    },
+    "socialProof": {
+      "headline": "Trusted by 500+ companies",
+      "description": "From startups to enterprise, we scale with you"
+    },
+    "whatWeDo": {
+      "headline": "Integrated Growth Services",
+      "subheadline": "Four core services that work together to drive measurable results",
+      "services": [
+        {
+          "title": "SEO / Organic Growth",
+          "description": "Get found everywhere. Technical SEO, content strategy, and AI engine optimization across all search surfaces.",
+          "link": "/services/seo"
+        },
+        {
+          "title": "Paid Media",
+          "description": "Performance-driven paid campaigns. Google, Meta, LinkedIn, TikTok—we optimize where your audience is.",
+          "link": "/services/paid-media"
+        },
+        {
+          "title": "Content Marketing",
+          "description": "Content that converts. Strategy, production, and distribution systems that build authority and drive leads.",
+          "link": "/services/content"
+        },
+        {
+          "title": "Conversion Rate Optimization",
+          "description": "Turn traffic into revenue. Data-driven testing and optimization across your entire funnel.",
+          "link": "/services/cro"
+        }
+      ]
+    },
+    "howWeWork": {
+      "headline": "How We Work",
+      "subheadline": "AI-forward execution that compounds",
+      "steps": [
+        {
+          "title": "Diagnose",
+          "description": "We audit your current state, identify gaps, and map opportunities. No assumptions—just data."
+        },
+        {
+          "title": "Build",
+          "description": "We create systems, workflows, and content engines. Not one-off campaigns—repeatable processes."
+        },
+        {
+          "title": "Ship",
+          "description": "We execute fast. AI tools and workflows let us move at startup speed with enterprise quality."
+        },
+        {
+          "title": "Iterate",
+          "description": "We measure, learn, and improve. Every week. Every month. Continuous optimization, not set-and-forget."
+        }
+      ]
+    },
+    "aiAdvantage": {
+      "headline": "AI-Forward Advantage",
+      "subheadline": "Leverage that compounds",
+      "description": "AI isn't a side project at Single Grain—it's foundational. We use AI agents, automated workflows, and documented SOPs to deliver faster, smarter, and at scale.",
+      "points": [
+        "AI-powered research and content workflows that produce quality output faster",
+        "Automated testing and optimization loops that learn and improve continuously",
+        "Reusable templates, prompts, and systems that compound over time",
+        "Small expert team, outsized output—that's the leverage"
+      ]
+    },
+    "caseStudyHighlights": {
+      "headline": "Results That Speak",
+      "subheadline": "Real outcomes from companies we've helped grow",
+      "studies": [
+        {
+          "title": "B2B SaaS: 3x Revenue Growth",
+          "metric": "3x revenue in 18 months",
+          "description": "Integrated SEO, paid media, and content strategy with AI-powered optimization.",
+          "link": "/case-studies/saas-growth"
+        },
+        {
+          "title": "E-commerce: $2M+ Additional Revenue",
+          "metric": "$2M+ additional revenue",
+          "description": "Unified paid media strategy with advanced attribution and AI creative optimization.",
+          "link": "/case-studies/ecommerce-scaling"
+        },
+        {
+          "title": "EdTech: 85% Organic Traffic Growth",
+          "metric": "85% traffic growth",
+          "description": "Comprehensive SEO including technical optimization and AI engine visibility.",
+          "link": "/case-studies/edtech-expansion"
+        }
+      ]
+    },
+    "stats": [
+      {
+        "value": "3.2x",
+        "label": "Average ROI",
+        "sublabel": "Typical client outcomes"
+      },
+      {
+        "value": "500+",
+        "label": "Companies Trust Us",
+        "sublabel": "Growing partnerships"
+      },
+      {
+        "value": "67%",
+        "label": "Avg. Traffic Growth",
+        "sublabel": "Organic growth"
+      }
+    ],
+    "cta": {
+      "headline": "Ready to Get Started?",
+      "description": "Let's build your growth engine. We typically respond the same day.",
+      "primaryCTA": "Book a Strategy Call",
+      "secondaryCTA": "Request Marketing Audit"
+    }
+  },
+  "services": {
+    "seo": {
+      "seo": {
+        "title": "SEO Services | Search Everywhere Optimization | Single Grain",
+        "description": "Get found everywhere. Technical SEO, AI-powered content, and multi-surface optimization. We help you rank on Google, AI engines, and emerging search platforms."
+      },
+      "hero": {
+        "headline": "SEO / Organic Growth",
+        "subheadline": "Get found everywhere your audience searches",
+        "description": "Modern SEO isn't just Google. It's visibility across search engines, AI surfaces, social platforms, and communities. We build systems that get you found everywhere."
+      },
+      "sections": [
+        {
+          "title": "Search Everywhere Optimization",
+          "content": "Discovery happens across platforms. Google, Bing, Perplexity, ChatGPT, Reddit, YouTube, LinkedIn—your audience searches everywhere. We optimize for all of it.\n\nWe call it 'Search Everywhere Optimization.' It's technical SEO, content strategy, and AI engine optimization rolled into one integrated system. You don't need separate strategies for each platform—you need one system that works across all surfaces."
+        },
+        {
+          "title": "What You Get",
+          "content": "Technical SEO audit and optimization\nAI-powered content strategy and production\nLLM optimization for AI search engines\nProgrammatic SEO for scale\nLink building and authority development\nMulti-surface visibility tracking\nWeekly performance reporting\nContinuous iteration and improvement"
+        },
+        {
+          "title": "How It Works",
+          "content": "We start with a comprehensive audit. Technical issues, content gaps, competitive positioning—we map it all.\n\nThen we build. Content systems, technical fixes, optimization workflows. We use AI to accelerate production without sacrificing quality.\n\nWe ship fast. Weekly content, continuous technical improvements, rapid iteration.\n\nWe measure everything. Traffic, rankings, conversions, revenue. Clear reporting, clear ROI."
+        },
+        {
+          "title": "Expected Outcomes",
+          "content": "Increased organic traffic across all search surfaces\nHigher rankings on Google and AI engines\nMore qualified leads from organic search\nBetter brand visibility where your audience searches\nMeasurable ROI tied to business outcomes"
+        }
+      ],
+      "cta": {
+        "headline": "Ready to Get Found Everywhere?",
+        "description": "Let's build your organic growth engine.",
+        "button": "Work With Us"
+      }
+    },
+    "paidMedia": {
+      "seo": {
+        "title": "Paid Media Services | Performance Marketing | Single Grain",
+        "description": "Data-driven paid campaigns across Google, Meta, LinkedIn, TikTok, and emerging platforms. Maximum ROI, minimum waste. Performance marketing that scales."
+      },
+      "hero": {
+        "headline": "Paid Media / Performance Marketing",
+        "subheadline": "Scalable paid campaigns that drive revenue",
+        "description": "We run paid campaigns that work. Google Ads, Meta, LinkedIn, TikTok—we optimize where your audience is. Data-driven, AI-enhanced, ROI-focused."
+      },
+      "sections": [
+        {
+          "title": "Multi-Platform Performance",
+          "content": "Your audience is everywhere. So are we. We build integrated paid media strategies that work across Google, Meta, LinkedIn, TikTok, YouTube, and emerging platforms.\n\nWe don't just run campaigns—we build systems. Automated bid optimization, AI-powered creative testing, advanced attribution modeling. Everything optimized for ROI."
+        },
+        {
+          "title": "What You Get",
+          "content": "Multi-platform campaign management\nAdvanced audience targeting and segmentation\nAI-powered bid optimization\nCreative testing and optimization\nAttribution modeling and reporting\nPerformance tracking and analysis\nWeekly optimization cadence\nClear ROI reporting"
+        },
+        {
+          "title": "How It Works",
+          "content": "We start with strategy. Audience research, platform selection, budget allocation. We map the entire customer journey.\n\nThen we build. Campaigns, ad sets, creatives. We use AI to generate and test variations faster.\n\nWe optimize continuously. Daily monitoring, weekly optimization, monthly strategy reviews. Data-driven decisions, not guesswork.\n\nWe report clearly. ROAS, CPA, revenue attribution. You see exactly what's working and why."
+        },
+        {
+          "title": "Expected Outcomes",
+          "content": "Scalable lead generation across platforms\nImproved ROAS and lower CPA\nBetter attribution and measurement\nMulti-channel presence and brand visibility\nClear ROI tied to revenue"
+        }
+      ],
+      "cta": {
+        "headline": "Ready to Scale Your Paid Media?",
+        "description": "Let's build performance campaigns that drive revenue.",
+        "button": "Work With Us"
+      }
+    },
+    "content": {
+      "seo": {
+        "title": "Content Marketing Services | Content Engine | Single Grain",
+        "description": "Content that converts. Strategy, production, and distribution systems that build authority, drive leads, and scale with AI-powered workflows."
+      },
+      "hero": {
+        "headline": "Content Marketing / Content Engine",
+        "subheadline": "Content that builds authority and drives leads",
+        "description": "We build content engines. Strategy, production, distribution—all optimized for search, engagement, and conversion. AI-powered workflows that scale."
+      },
+      "sections": [
+        {
+          "title": "Content That Converts",
+          "content": "Content marketing isn't just blogging. It's a system. Strategy, production, distribution, optimization—all working together to build authority and drive leads.\n\nWe build content engines. AI-powered research, production workflows, distribution systems. Quality content, faster production, better results."
+        },
+        {
+          "title": "What You Get",
+          "content": "Content strategy and planning\nSEO-optimized blog content production\nVideo and multimedia content\nYouTube growth and optimization\nContent distribution and promotion\nPerformance analysis and optimization\nAI-powered research and workflows\nContent calendar and production system"
+        },
+        {
+          "title": "How It Works",
+          "content": "We start with strategy. Audience research, content gaps, competitive analysis. We map what content will drive results.\n\nThen we build. Production workflows, templates, AI tools. We produce quality content faster.\n\nWe distribute. SEO optimization, social promotion, email campaigns. We get your content in front of the right audience.\n\nWe optimize. Performance tracking, A/B testing, iteration. We improve what works, cut what doesn't."
+        },
+        {
+          "title": "Expected Outcomes",
+          "content": "Increased brand authority and thought leadership\nHigher engagement rates and social shares\nMore qualified leads from content\nBetter search visibility and rankings\nMeasurable ROI from content investment"
+        }
+      ],
+      "cta": {
+        "headline": "Ready to Build Your Content Engine?",
+        "description": "Let's create content that drives results.",
+        "button": "Work With Us"
+      }
+    },
+    "cro": {
+      "seo": {
+        "title": "Conversion Rate Optimization | CRO Services | Single Grain",
+        "description": "Turn traffic into revenue. Data-driven testing and optimization across your entire funnel. Higher conversions, better user experience, more revenue."
+      },
+      "hero": {
+        "headline": "Conversion Rate Optimization",
+        "subheadline": "Turn traffic into revenue",
+        "description": "We optimize every step of your user journey. Landing pages, forms, checkout flows—we test, iterate, and improve until conversions increase."
+      },
+      "sections": [
+        {
+          "title": "Data-Driven Optimization",
+          "content": "More traffic doesn't mean more revenue. Conversion rate optimization does. We test, measure, and optimize every step of your funnel.\n\nWe use data, not assumptions. Heatmaps, session recordings, A/B tests, user feedback. We find what's broken and fix it. Then we find what works and double down."
+        },
+        {
+          "title": "What You Get",
+          "content": "Conversion audit and analysis\nA/B testing program and execution\nLanding page optimization\nForm optimization\nCheckout flow improvements\nUser experience enhancements\nPerformance tracking and reporting\nContinuous testing and iteration"
+        },
+        {
+          "title": "How It Works",
+          "content": "We start with analysis. Funnel mapping, conversion tracking, user behavior analysis. We identify where you're losing conversions.\n\nThen we test. Hypotheses, test designs, implementation. We run controlled experiments.\n\nWe measure. Results, statistical significance, business impact. We report what worked and why.\n\nWe iterate. Winning tests become permanent. Losing tests inform new hypotheses. Continuous improvement."
+        },
+        {
+          "title": "Expected Outcomes",
+          "content": "Higher conversion rates across your funnel\nImproved user experience and engagement\nMore revenue from existing traffic\nBetter lead quality and qualification\nClear ROI from optimization investment"
+        }
+      ],
+      "cta": {
+        "headline": "Ready to Optimize Your Conversions?",
+        "description": "Let's turn more of your traffic into revenue.",
+        "button": "Work With Us"
+      }
+    },
+    "overview": {
+      "seo": {
+        "title": "Marketing Services | SEO, Paid Media, Content, CRO | Single Grain",
+        "description": "Integrated growth services: SEO, Paid Media, Content Marketing, and CRO. AI-forward execution that scales. Trusted by 500+ companies."
+      },
+      "hero": {
+        "headline": "Integrated Growth Services",
+        "subheadline": "Four services that work together to drive measurable results",
+        "description": "We don't do siloed marketing. SEO, paid media, content, and CRO work together as one integrated system. That's how you get 3.2x ROI."
+      },
+      "sections": [
+        {
+          "title": "How Our Services Work Together",
+          "content": "Great marketing isn't one channel. It's an integrated system. SEO brings organic traffic. Paid media scales it. Content builds authority. CRO converts it all.\n\nWe build systems, not campaigns. Every service connects to the others. Data flows between them. Learnings compound. Results multiply."
+        },
+        {
+          "title": "What You Get With Every Service",
+          "content": "Strategy: We audit, research, and plan. No assumptions—just data-driven strategy.\n\nExecution: We build, ship, and optimize. Fast iteration, continuous improvement.\n\nReporting: Clear metrics, clear ROI. You see what's working and why.\n\nExperimentation: We test, learn, and scale. What works gets bigger. What doesn't gets cut."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Do I need all four services?",
+          "answer": "No. We work with companies at different stages. Some need SEO first. Others need paid media to scale. We'll recommend what makes sense for your situation."
+        },
+        {
+          "question": "How long until I see results?",
+          "answer": "It depends on the service. Paid media can show results in weeks. SEO typically takes 3-6 months. Content builds over time. CRO shows results as we test and optimize. We'll set clear expectations upfront."
+        },
+        {
+          "question": "What's your minimum engagement?",
+          "answer": "We typically work with companies spending $10K+ monthly on marketing. But it's less about budget and more about fit. Let's talk about your situation."
+        },
+        {
+          "question": "How do you measure ROI?",
+          "answer": "We track everything. Traffic, leads, revenue, attribution. We connect marketing metrics to business outcomes. You see clear ROI reporting every month."
+        },
+        {
+          "question": "Do you work with startups?",
+          "answer": "Yes. We work with companies at every stage—from pre-seed to enterprise. What matters is fit, not size."
+        }
+      ]
+    }
+  },
+  "aiGrowth": {
+    "seo": {
+      "title": "AI Growth | Search Everywhere Optimization | Single Grain",
+      "description": "AI-forward marketing that scales. Search Everywhere Optimization, AI-powered workflows, and systems that compound. Get found everywhere your audience searches."
+    },
+    "hero": {
+      "headline": "AI Growth / Search Everywhere",
+      "subheadline": "Get found everywhere your audience searches",
+      "description": "Modern marketing isn't one platform. It's visibility across search engines, AI surfaces, social platforms, and communities. We build systems that work everywhere."
+    },
+    "sections": [
+      {
+        "title": "Search Everywhere Optimization",
+        "content": "Your audience doesn't just search on Google. They search on Perplexity, ChatGPT, Reddit, YouTube, LinkedIn, TikTok. Discovery happens everywhere.\n\nWe call it 'Search Everywhere Optimization.' It's not about optimizing for one platform—it's about building systems that get you found wherever your audience searches.\n\nTechnical SEO for traditional search. Content optimization for AI engines. Community presence where your audience hangs out. Social signals that boost visibility. All working together as one system."
+      },
+      {
+        "title": "AI as Leverage",
+        "content": "AI isn't a nice-to-have. It's leverage. It's how small expert teams produce outsized output.\n\nWe use AI for research, content production, testing, optimization. Not to replace human expertise—to amplify it. AI handles the repetitive work. Humans handle strategy, quality, and taste.\n\nThe result? Faster execution, better decisions, compounding learning. What took weeks now takes days. What was impossible is now routine."
+      },
+      {
+        "title": "From Prototype to Production",
+        "content": "We don't build demos. We build systems that ship.\n\nEvery workflow is documented. Every process is repeatable. Every template is reusable. We finish what we start, then we improve it.\n\nThat's the difference between agencies that talk and agencies that deliver. We ship. Fast iteration, continuous improvement, measurable results."
+      },
+      {
+        "title": "Workflow Library",
+        "content": "We've built a library of workflows, SOPs, templates, and automation. Not just for us—for our clients.\n\nContent production workflows. SEO audit templates. Paid media optimization loops. CRO testing frameworks. All documented, all reusable, all improving over time.\n\nYou don't just get campaigns. You get systems. Systems that scale, systems that compound, systems that work."
+      },
+      {
+        "title": "Human + AI Partnership",
+        "content": "AI handles speed and scale. Humans handle quality and accountability.\n\nWe use AI to accelerate research, production, and testing. But strategy, quality control, and client relationships? That's human expertise.\n\nThe best results come from the partnership. AI for leverage. Humans for judgment. That's how you get both speed and quality."
+      }
+    ],
+    "cta": {
+      "headline": "Ready to Build Your Growth Engine?",
+      "description": "Let's build systems that get you found everywhere.",
+      "button": "Work With Us"
+    }
+  },
+  "caseStudies": {
+    "seo": {
+      "title": "Case Studies | Marketing Results | Single Grain",
+      "description": "Real results from companies we've helped grow. See how we've delivered 3x revenue growth, $2M+ additional revenue, and 85% traffic increases."
+    },
+    "hero": {
+      "headline": "Case Studies",
+      "subheadline": "Real results from companies we've helped grow",
+      "description": "These are example case studies showing typical outcomes. Every client is different, but these illustrate the types of results we help companies achieve."
+    },
+    "studies": [
+      {
+        "id": "saas-growth",
+        "title": "B2B SaaS: 3x Revenue Growth in 18 Months",
+        "client": "B2B SaaS Company",
+        "industry": "SaaS",
+        "challenge": "Needed to scale marketing operations while maintaining efficiency and ROI during rapid growth phase. Traditional agency approach wasn't working—too slow, too expensive, not integrated.",
+        "whatWeChanged": "Built integrated marketing system: SEO for organic growth, paid media for scale, content for authority, CRO for conversion. Used AI-powered workflows to accelerate production and optimization.",
+        "systemBuilt": "Content production workflow using AI research and human editing. SEO optimization system with technical fixes and content strategy. Paid media campaigns with automated bid optimization. CRO testing program with weekly iteration.",
+        "outcome": "3x revenue growth in 18 months. 67% increase in organic traffic. 2.8x ROI. System continues to scale without proportional headcount increase.",
+        "metrics": [
+          {
+            "value": "3x",
+            "label": "Revenue Growth"
+          },
+          {
+            "value": "67%",
+            "label": "Traffic Increase"
+          },
+          {
+            "value": "2.8x",
+            "label": "ROI"
+          }
+        ],
+        "quote": "Single Grain didn't just execute campaigns—they built systems that scaled with us. The AI-forward approach meant we could move faster than our competitors.",
+        "testimonialAuthor": "CMO, B2B SaaS Company"
+      },
+      {
+        "id": "ecommerce-scaling",
+        "title": "E-commerce: $2M+ Additional Revenue",
+        "client": "E-commerce Brand",
+        "industry": "E-commerce",
+        "challenge": "Struggling to scale paid advertising profitably. Campaigns worked initially but hit diminishing returns. Needed better attribution and creative optimization.",
+        "whatWeChanged": "Unified paid media strategy across Google, Meta, and TikTok. Advanced attribution modeling to understand true ROI. AI-powered creative testing to find winning variations faster.",
+        "systemBuilt": "Multi-platform campaign management system. Automated creative testing workflow. Attribution modeling and reporting dashboard. Weekly optimization cadence with clear ROI tracking.",
+        "outcome": "$2M+ in additional revenue. 45% improvement in ROAS. 3.5x ROI. System now runs with minimal manual intervention.",
+        "metrics": [
+          {
+            "value": "$2M+",
+            "label": "Additional Revenue"
+          },
+          {
+            "value": "45%",
+            "label": "ROAS Improvement"
+          },
+          {
+            "value": "3.5x",
+            "label": "ROI"
+          }
+        ],
+        "quote": "The combination of expert strategy and AI tools meant we could test and iterate faster than ever. Results speak for themselves.",
+        "testimonialAuthor": "VP Marketing, E-commerce Brand"
+      },
+      {
+        "id": "edtech-expansion",
+        "title": "EdTech: 85% Organic Traffic Growth",
+        "client": "EdTech Company",
+        "industry": "Education Technology",
+        "challenge": "Needed to establish thought leadership and capture market share in competitive education technology space. Traditional SEO wasn't enough—needed visibility across all search surfaces.",
+        "whatWeChanged": "Comprehensive SEO strategy including technical optimization, content hub development, and AI engine optimization. Built content production system using AI workflows.",
+        "systemBuilt": "Technical SEO audit and optimization system. Content production workflow with AI research and human editing. AI engine optimization for Perplexity, ChatGPT, and other surfaces. Link building and authority development program.",
+        "outcome": "85% organic traffic growth. Visible across 5 major AI engines. 3.2x ROI. Established as thought leader in education technology space.",
+        "metrics": [
+          {
+            "value": "85%",
+            "label": "Traffic Growth"
+          },
+          {
+            "value": "5",
+            "label": "AI Engines Visible"
+          },
+          {
+            "value": "3.2x",
+            "label": "ROI"
+          }
+        ],
+        "quote": "Single Grain's AI-forward approach meant we were visible everywhere our audience searches—not just Google. That's the future of SEO.",
+        "testimonialAuthor": "Director of Marketing, EdTech Company"
+      }
+    ],
+    "template": {
+      "sections": [
+        "Challenge: What problem were they solving?",
+        "What We Changed: The strategy and approach we took",
+        "System Built: The workflows, processes, and systems we created",
+        "Outcome: The results achieved (metrics, qualitative outcomes)",
+        "Testimonial: Client quote and attribution"
+      ]
+    }
+  },
+  "about": {
+    "seo": {
+      "title": "About Us | Single Grain | Marketing Partner That Companies Never Outgrow",
+      "description": "We're the marketing partner that companies never outgrow. AI-forward, ROI-focused, expert-led. Learn about our mission, approach, and how we work."
+    },
+    "hero": {
+      "headline": "The Marketing Partner That Companies Never Outgrow",
+      "subheadline": "AI-forward, ROI-focused, expert-led",
+      "description": "We build systems, not just campaigns. We use AI as leverage. We measure everything. We ship fast. That's how we help companies grow."
+    },
+    "sections": [
+      {
+        "title": "Our Mission",
+        "content": "We are the marketing partner that companies never outgrow.\n\nThat means we build systems that scale. We use AI to amplify human expertise. We measure ROI, not vanity metrics. We ship fast and iterate continuously.\n\nWe're not here for quick wins. We're here for long-term growth. Companies that work with us get better over time, not just bigger."
+      },
+      {
+        "title": "Operating Principles",
+        "content": "AI Daily: AI isn't a side project—it's foundational. We use AI agents, workflows, and automation in everything we do.\n\nSystems Thinking: We build systems, not campaigns. Systems scale. Campaigns don't.\n\nDocumented Leverage: Everything is documented. SOPs, templates, workflows. Knowledge compounds.\n\nFast Iteration: We ship fast, learn faster, iterate constantly. Weekly cadence, not quarterly reviews.\n\nAccountability: We measure everything. Clear metrics, clear ROI, clear reporting. No fluff."
+      },
+      {
+        "title": "How Engagements Work",
+        "content": "Discovery: We audit your current state. Technical SEO, content gaps, competitive positioning, conversion opportunities. We map everything.\n\nRoadmap: We create a strategic roadmap. Priorities, timelines, expected outcomes. Clear plan, clear expectations.\n\nBuild: We build systems. Content workflows, SEO optimizations, paid campaigns, CRO tests. We ship fast.\n\nWeekly Iteration: We meet weekly. Review results, optimize what's working, cut what's not. Continuous improvement, not set-and-forget."
+      }
+    ],
+    "cta": {
+      "headline": "Ready to Work Together?",
+      "description": "Let's build systems that scale with your growth.",
+      "button": "Work With Us"
+    }
+  },
+  "contact": {
+    "seo": {
+      "title": "Contact Us | Get Started | Single Grain",
+      "description": "Ready to get started? Book a strategy call or request a marketing audit. We typically respond the same day."
+    },
+    "hero": {
+      "headline": "Ready to Get Started?",
+      "subheadline": "We typically respond the same day",
+      "description": "Let's talk about how we can help you grow. Book a strategy call or request a marketing audit. No hard selling, no commitment—just a conversation."
+    },
+    "form": {
+      "fields": [
+        {
+          "name": "name",
+          "label": "Your name",
+          "type": "text",
+          "required": true,
+          "placeholder": "John Doe"
+        },
+        {
+          "name": "email",
+          "label": "Work email",
+          "type": "email",
+          "required": true,
+          "placeholder": "john@company.com"
+        },
+        {
+          "name": "company",
+          "label": "Company name",
+          "type": "text",
+          "required": true,
+          "placeholder": "Company Inc."
+        },
+        {
+          "name": "budget",
+          "label": "Monthly marketing budget",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Unsure",
+            "Less than $3,000",
+            "$3,000 to $10,000",
+            "$10,000 to $20,000",
+            "$20,000 to $50,000",
+            "$50,000 to $100,000",
+            "$100,000+"
+          ]
+        },
+        {
+          "name": "phone",
+          "label": "Phone number",
+          "type": "tel",
+          "required": false,
+          "placeholder": "+1 (555) 123-4567"
+        },
+        {
+          "name": "message",
+          "label": "What kind of help are you looking for?",
+          "type": "textarea",
+          "required": false,
+          "placeholder": "Tell us about your marketing needs..."
+        }
+      ],
+      "submitButton": "Work With Us",
+      "privacyNote": "Your info is safe with us - We never share your data"
+    },
+    "whatHappensNext": {
+      "headline": "What Happens Next",
+      "steps": [
+        {
+          "title": "We Review",
+          "description": "We review your submission and get back to you within 24 hours (usually same day)."
+        },
+        {
+          "title": "We Connect",
+          "description": "We schedule a call to understand your situation, goals, and challenges."
+        },
+        {
+          "title": "We Propose",
+          "description": "If there's a fit, we propose a roadmap. No hard selling—just clear recommendations."
+        }
+      ]
+    },
+    "trustBullets": [
+      "No hard selling",
+      "No commitment",
+      "Personal attention guaranteed"
+    ]
+  },
+  "careers": {
+    "seo": {
+      "title": "Careers | Join Single Grain | AI-Forward Marketing",
+      "description": "Join the most innovative marketing company that drives results. AI is foundational. Ship mentality. Remote-friendly."
+    },
+    "hero": {
+      "headline": "Grow Your Career with Single Grain",
+      "subheadline": "AI-forward marketing that drives results",
+      "description": "We're building the most innovative marketing company that drives results. Join us."
+    },
+    "culture": {
+      "headline": "Our Culture",
+      "points": [
+        "AI is foundational: We use AI to amplify human expertise, not replace it. Every team member works with AI tools daily.",
+        "Ship mentality: We ship fast, learn faster, iterate constantly. No demos—just production systems that work.",
+        "Documentation: Everything is documented. SOPs, workflows, templates. Knowledge compounds, doesn't disappear.",
+        "Systems thinking: We build systems, not campaigns. Systems scale. Campaigns don't.",
+        "Remote-friendly: Work from anywhere, collaborate everywhere. Async-first, meeting-light."
+      ]
+    },
+    "cta": {
+      "headline": "Don't see a role that fits?",
+      "description": "We're always looking for exceptional talent. Get in touch.",
+      "button": "Get in Touch"
+    }
+  },
+  "microcopy": {
+    "ctas": [
+      "Work With Us",
+      "View Case Studies",
+      "Book a Strategy Call",
+      "Request Marketing Audit",
+      "Learn More",
+      "Get Started",
+      "See How It Works",
+      "Schedule a Call"
+    ],
+    "trust": [
+      "Trusted by 500+ companies",
+      "Average 3.2x ROI",
+      "We typically respond the same day",
+      "No hard selling",
+      "No commitment",
+      "Personal attention guaranteed"
+    ],
+    "footer": {
+      "newsletter": "Subscribe to our newsletter for the latest marketing insights",
+      "links": [
+        "Services",
+        "Case Studies",
+        "About",
+        "Contact",
+        "Careers",
+        "Privacy Policy",
+        "Terms of Service"
+      ]
+    }
+  }
+}
+

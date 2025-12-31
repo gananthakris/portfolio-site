@@ -1,0 +1,46 @@
+/* Single Grain Real Website Styles */
+
+@import "tailwindcss";
+
+@theme {
+  --color-sg-primary: #2563eb;
+  --color-sg-primary-dark: #1e40af;
+  --color-sg-accent: #10b981;
+}
+
+/* Typography */
+.heading-xl {
+  @apply text-4xl md:text-6xl font-bold tracking-tight;
+}
+
+.heading-lg {
+  @apply text-3xl md:text-4xl font-bold;
+}
+
+.heading-md {
+  @apply text-2xl md:text-3xl font-bold;
+}
+
+/* Buttons */
+.btn-primary {
+  @apply px-6 py-3 bg-sg-primary text-white rounded-lg font-semibold hover:bg-sg-primary-dark transition-colors;
+}
+
+.btn-secondary {
+  @apply px-6 py-3 bg-transparent border-2 border-sg-primary text-sg-primary rounded-lg font-semibold hover:bg-sg-primary hover:text-white transition-colors;
+}
+
+/* Cards */
+.card {
+  @apply bg-white rounded-xl shadow-md p-6 border border-gray-100;
+}
+
+.card-hover {
+  @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+}
+
+/* Section Spacing */
+.section-padding {
+  @apply py-16 md:py-24;
+}
+

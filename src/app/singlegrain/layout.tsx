@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
-import { Geist_Sans, Geist_Mono } from "next/font/google";
+import { Inter, JetBrains_Mono } from "next/font/google";
 import "../globals.css";
 import "./singlegrain.css";
 import SGNavbar from "@/components/singlegrain/SGNavbar";
 import SGFooter from "@/components/singlegrain/SGFooter";
 
-const geistSans = Geist_Sans({
+const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-geist-sans",
+  variable: "--font-inter",
 });
 
-const geistMono = Geist_Mono({
+const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
-  variable: "--font-geist-mono",
+  variable: "--font-mono",
 });
 
 export const metadata: Metadata = {
@@ -32,8 +32,8 @@ export default function SingleGrainLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body className="bg-sg-dark text-sg-light antialiased">
+    <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
+      <body className="bg-sg-dark text-sg-light antialiased" style={{ fontFamily: 'var(--font-inter)' }}>
         <SGNavbar />
         <main className="min-h-screen">{children}</main>
         <SGFooter />

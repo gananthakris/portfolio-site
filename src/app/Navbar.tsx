@@ -40,6 +40,12 @@ export default function Navbar() {
 
         <div className="flex items-center gap-4 sm:gap-6">
           <div className="hidden sm:flex gap-4 text-sm">
+            <Link href="/" className={link}>
+              Portfolio
+            </Link>
+            <Link href="/marketing" className={link}>
+              Marketing
+            </Link>
             <a href="/#about" className={link}>
               About
             </a>
@@ -48,9 +54,6 @@ export default function Navbar() {
             </a>
             <a href="/#projects" className={link}>
               Projects
-            </a>
-            <a href="/#skills" className={link}>
-              Skills
             </a>
             <a href="/#contact" className={link}>
               Contact

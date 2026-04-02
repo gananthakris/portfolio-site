@@ -7,7 +7,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-gray-200/50 dark:border-gray-800/50 bg-white/50 dark:bg-zinc-900/50 backdrop-blur-sm">
+    <footer className="border-t border-amber-900/20 bg-[#08070a]/80 backdrop-blur-sm">
       <div className="max-w-6xl mx-auto px-4 py-8">
         <div className="flex flex-col gap-6">
           {/* Social Links and Resume */}
@@ -19,7 +19,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1, y: -2 }}
                 whileTap={{ scale: 0.95 }}
-                className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
+                className="text-white/40 hover:text-amber-400 transition-colors duration-300"
                 aria-label="LinkedIn"
               >
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -32,7 +32,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1, y: -2 }}
                 whileTap={{ scale: 0.95 }}
-                className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors duration-300"
+                className="text-white/40 hover:text-gray-900 dark:hover:text-white transition-colors duration-300"
                 aria-label="GitHub"
               >
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -57,7 +57,7 @@ export default function Footer() {
                     window.location.href = "mailto:gananthakris@binghamton.edu?subject=Resume Request&body=Hi Gokulkrishna, I'd like to request your resume.";
                   }
                 }}
-                className="px-4 py-2 rounded-lg bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-600 text-white text-sm font-medium hover:from-indigo-700 hover:via-purple-700 hover:to-violet-700 transition-all shadow-md hover:shadow-lg flex items-center gap-2"
+                className="px-4 py-2 rounded-lg bg-gradient-to-r from-amber-500 to-orange-500 text-[#08070a] text-sm font-semibold hover:from-amber-400 hover:to-orange-400 transition-all shadow-md hover:shadow-amber-500/20 flex items-center gap-2"
               >
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -67,7 +67,7 @@ export default function Footer() {
             </div>
             <a
               href="mailto:gananthakris@binghamton.edu"
-              className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
+              className="text-sm text-white/40 hover:text-amber-400 transition-colors duration-300"
               aria-label="Email"
             >
               gananthakris@binghamton.edu
@@ -75,8 +75,8 @@ export default function Footer() {
           </div>
           
           {/* Copyright */}
-          <div className="text-center pt-4 border-t border-gray-200/50 dark:border-gray-800/50">
-            <p className="text-sm text-gray-600 dark:text-gray-400">
+          <div className="text-center pt-4 border-t border-amber-900/15">
+            <p className="text-sm text-white/40">
               © {currentYear} Gokulkrishna A. All rights reserved.
             </p>
           </div>

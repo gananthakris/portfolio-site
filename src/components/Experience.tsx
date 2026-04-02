@@ -4,63 +4,63 @@ import { motion } from "framer-motion";
 
 const experiences = [
   {
-    title: "Technical Lead – Automation (RPA)",
+    title: "AI Product & Automation Lead",
     company: "Sagility Health",
     period: "Nov 2022 – Jul 2024",
     location: "Coimbatore, India",
     duration: "1 year 8 months",
     color: "blue",
     achievements: [
-      "Delivered RPA solutions using Automation Anywhere (AA360) for healthcare operations",
-      "Worked on automations that contributed to cost savings and efficiency improvements",
-      "Handled full SDLC — requirements gathering, development, testing, deployment, and support",
-      "Built reusable bot frameworks and standardized logging and reporting",
+      "Owned full product lifecycle for 8+ AI automation products — from discovery and requirements to launch and post-deployment support",
+      "Drove $300K+ in annual cost savings by identifying bottlenecks and shipping automation solutions with clear ROI alignment",
+      "Reduced average process handling time by 65% across healthcare ops teams through targeted automation delivery",
+      "Established reusable bot architecture and internal tooling standards adopted as the org-wide platform standard",
     ],
   },
   {
-    title: "RPA Developer",
+    title: "Applied AI & Automation Specialist",
     company: "TaskUs",
     period: "Nov 2020 – Nov 2022",
     location: "Indore, India",
     duration: "2 years",
     color: "purple",
     achievements: [
-      "Developed and deployed 20+ bots in Automation Anywhere and Python to streamline back-office processes",
-      "Integrated Salesforce, Oracle CRM, and Google Chat APIs for real-time alerts and reporting",
-      "Delivered robust bots with structured exception handling, testing scripts, and version-controlled repositories",
-      "Collaborated directly with business teams for process discovery, documentation, and optimization",
+      "Shipped 20+ automation products eliminating 10,000+ hours/year of manual back-office work across GTM and ops teams",
+      "Integrated Salesforce, Oracle CRM, and real-time alerting — reducing time-to-signal on critical deal events from hours to seconds",
+      "Led discovery workshops with 5+ business stakeholders per initiative to define scope, success metrics, and feature priorities",
+      "Cut average bot development cycle by 30% by standardizing reusable components, specs, and QA frameworks",
     ],
   },
   {
-    title: "RPA Engineer",
+    title: "AI Solutions Engineer",
     company: "VRBotz",
     period: "Mar 2019 – Nov 2020",
     location: "Bangalore, India",
     duration: "1 year 8 months",
     color: "indigo",
     achievements: [
-      "Developed automation for payroll, reconciliation, and data validation using WorkFusion and Python",
-      "Implemented scalable workflows following best practices for design, credential handling, and audit logging",
-      "Supported production bots through testing, debugging, and continuous improvement cycles",
+      "Scoped and delivered automation across payroll, reconciliation, and data validation — reducing client processing time by 50%+",
+      "Translated enterprise client pain points into product specs and shipped AI-powered workflows saving 2,000+ hours/year per client",
+      "Iterated on deployed products based on user feedback, maintaining 95%+ uptime and continuous improvement cycles",
     ],
   },
 ];
 
 const colorClasses = {
-  blue: "from-blue-500 to-blue-600",
-  purple: "from-purple-500 to-purple-600",
-  indigo: "from-indigo-500 to-indigo-600",
+  blue: "from-amber-500 to-amber-600",
+  purple: "from-orange-500 to-orange-600",
+  indigo: "from-amber-400 to-orange-500",
 };
 
 const colorText = {
-  blue: "text-blue-600 dark:text-blue-400",
-  purple: "text-purple-600 dark:text-purple-400",
-  indigo: "text-indigo-600 dark:text-indigo-400",
+  blue: "text-amber-400",
+  purple: "text-orange-400",
+  indigo: "text-amber-300",
 };
 
 export function Experience() {
   return (
-    <section id="experience" className="py-20 bg-gray-50 dark:bg-black">
+    <section id="experience" className="py-20 bg-[#08070a]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -69,15 +69,15 @@ export function Experience() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4 text-gray-900 dark:text-white">
+          <h2 className="text-4xl font-bold mb-4 text-white">
             Experience
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-600 mx-auto rounded-full"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-amber-500 via-amber-400 to-orange-400 mx-auto rounded-full"></div>
         </motion.div>
 
         <div className="relative">
           {/* Timeline line */}
-          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-indigo-500 via-purple-500 to-violet-500 hidden md:block"></div>
+          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-amber-500 via-orange-400 to-amber-600 hidden md:block"></div>
 
           <div className="space-y-12">
             {experiences.map((exp, index) => (
@@ -98,11 +98,11 @@ export function Experience() {
 
                 <motion.div
                   whileHover={{ scale: 1.02, y: -5 }}
-                  className="bg-white dark:bg-zinc-900 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all border border-gray-200/50 dark:border-gray-800/50"
+                  className="bg-[#0d0c0f] border-amber-900/20 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all border border-gray-200/50 dark:border-gray-800/50"
                 >
                   <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                     <div>
-                      <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+                      <h3 className="text-2xl font-bold text-white mb-2">
                         {exp.title}
                       </h3>
                       <p
@@ -110,7 +110,7 @@ export function Experience() {
                       >
                         {exp.company}
                       </p>
-                      <p className="text-sm text-gray-600 dark:text-gray-400">
+                      <p className="text-sm text-white/40">
                         {exp.period} · {exp.location} · {exp.duration}
                       </p>
                     </div>
@@ -124,15 +124,15 @@ export function Experience() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: index * 0.2 + idx * 0.1 }}
-                        className="flex items-start gap-3 text-gray-700 dark:text-gray-300"
+                        className="flex items-start gap-3 text-white/65"
                       >
                         <span
                           className={`mt-1.5 flex-shrink-0 ${
                             exp.color === "blue"
-                              ? "text-blue-500"
+                              ? "text-amber-400"
                               : exp.color === "purple"
-                              ? "text-purple-500"
-                              : "text-indigo-500"
+                              ? "text-orange-400"
+                              : "text-amber-300"
                           }`}
                         >
                           ▸

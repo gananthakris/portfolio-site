@@ -1,29 +1,29 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { MagneticButton } from "./MagneticButton";
 import { TypingEffect } from "./TypingEffect";
 import { ParticleBackground } from "./ParticleBackground";
+import { HolographicAvatar } from "./HolographicAvatar";
 
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.2,
-      delayChildren: 0.3,
+      staggerChildren: 0.18,
+      delayChildren: 0.2,
     },
   },
 };
 
 const itemVariants = {
-  hidden: { opacity: 0, y: 20 },
+  hidden: { opacity: 0, y: 24 },
   visible: {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.6,
+      duration: 0.7,
       ease: [0.6, -0.05, 0.01, 0.99] as const,
     },
   },
@@ -31,38 +31,46 @@ const itemVariants = {
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-black dark:via-zinc-950 dark:to-zinc-900">
-      {/* Particle Background */}
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#08070a] cyber-grid">
+      {/* Neon canvas particles */}
       <ParticleBackground />
-      
-      {/* Animated gradient background */}
-      <div className="absolute inset-0 overflow-hidden">
+
+      {/* Deep ambient blobs */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
-          className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl"
-          animate={{
-            x: [0, 100, 0],
-            y: [0, -50, 0],
-            scale: [1, 1.2, 1],
+          className="absolute top-1/4 left-1/4 w-[480px] h-[480px] rounded-full"
+          style={{
+            background:
+              "radial-gradient(circle, rgba(245,158,11,0.07) 0%, transparent 70%)",
+            filter: "blur(40px)",
           }}
+          animate={{ x: [0, 80, 0], y: [0, -40, 0], scale: [1, 1.15, 1] }}
+          transition={{ duration: 22, repeat: Infinity, ease: "easeInOut" }}
+        />
+        <motion.div
+          className="absolute bottom-1/4 right-1/4 w-[480px] h-[480px] rounded-full"
+          style={{
+            background:
+              "radial-gradient(circle, rgba(251,146,60,0.07) 0%, transparent 70%)",
+            filter: "blur(40px)",
+          }}
+          animate={{ x: [0, -80, 0], y: [0, 40, 0], scale: [1, 1.15, 1] }}
           transition={{
-            duration: 20,
+            duration: 22,
             repeat: Infinity,
             ease: "easeInOut",
+            delay: 0.6,
           }}
         />
         <motion.div
-          className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl"
-          animate={{
-            x: [0, -100, 0],
-            y: [0, 50, 0],
-            scale: [1, 1.2, 1],
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] h-[320px] rounded-full"
+          style={{
+            background:
+              "radial-gradient(circle, rgba(217,119,6,0.05) 0%, transparent 70%)",
+            filter: "blur(30px)",
           }}
-          transition={{
-            duration: 20,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 0.5,
-          }}
+          animate={{ scale: [1, 1.3, 1] }}
+          transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
         />
       </div>
 
@@ -72,83 +80,76 @@ export function Hero() {
         animate="visible"
         className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center"
       >
-        {/* Profile Image */}
-        <motion.div
-          variants={itemVariants}
-          className="relative mb-8 inline-block"
-        >
-          <motion.div
-            className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full blur-2xl opacity-50"
-            animate={{
-              scale: [1, 1.2, 1],
-              opacity: [0.5, 0.7, 0.5],
-            }}
-            transition={{
-              duration: 3,
-              repeat: Infinity,
-              ease: "easeInOut",
-            }}
-          />
-          <div className="relative">
-            <Image
-              src="/Gokul.jpeg"
-              alt="Gokulkrishna A - AI Automation Engineer"
-              width={200}
-              height={200}
-              className="rounded-full border-4 border-white dark:border-zinc-800 shadow-2xl ring-4 ring-blue-500/20 dark:ring-purple-500/20"
-              priority
-            />
-          </div>
+        {/* Holographic 3D Avatar */}
+        <motion.div variants={itemVariants} className="mb-10 inline-block">
+          <HolographicAvatar />
         </motion.div>
 
-        {/* Animated Headline with Typing Effect */}
+        {/* Status badge */}
+        <motion.div variants={itemVariants} className="mb-6 flex justify-center">
+          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-mono font-medium tracking-widest uppercase text-[#fbbf24] border border-[#f59e0b]/30 bg-[#f59e0b]/5">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#fbbf24] animate-pulse" />
+            Available for work
+          </span>
+        </motion.div>
+
+        {/* Headline */}
         <motion.h1
           variants={itemVariants}
-          className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 relative"
+          className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6"
         >
-          <span className="text-gray-900 dark:text-white">
+          <span className="text-white/90">
             <TypingEffect text="Hi, I'm " speed={80} />
           </span>
           <span className="relative inline-block">
-            {/* Glow accent under name */}
+            {/* Glow halo under name */}
             <motion.span
-              className="absolute -inset-2 bg-gradient-to-r from-indigo-500/30 via-purple-500/30 to-violet-500/30 blur-2xl rounded-lg"
-              animate={{
-                opacity: [0.3, 0.5, 0.3],
-                scale: [1, 1.1, 1],
+              className="absolute -inset-3 rounded-xl blur-2xl"
+              style={{
+                background:
+                  "linear-gradient(135deg, rgba(245,158,11,0.18), rgba(251,146,60,0.14))",
               }}
-              transition={{
-                duration: 3,
-                repeat: Infinity,
-                ease: "easeInOut",
-              }}
+              animate={{ opacity: [0.4, 0.7, 0.4] }}
+              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
             />
-            <span className="relative bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-600 bg-clip-text text-transparent">
+            <span
+              className="relative neon-pulse"
+              style={{
+                background:
+                  "linear-gradient(90deg, #fbbf24 0%, #fef3c7 30%, #fb923c 55%, #fbbf24 100%)",
+                backgroundSize: "200% auto",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                backgroundClip: "text",
+                animation: "gradient-shift 4s linear infinite, amber-text-pulse 3s ease-in-out infinite alternate",
+              }}
+            >
               <TypingEffect text="Gokulkrishna A" speed={100} />
             </span>
           </span>
         </motion.h1>
 
+        {/* Role */}
         <motion.p
           variants={itemVariants}
-          className="text-xl sm:text-2xl text-gray-700 dark:text-gray-300 mb-4 font-medium"
+          className="text-xl sm:text-2xl mb-3 font-mono tracking-wide neon-amber"
         >
-          AI & Automation Engineer
+          Applied AI · Product · GTM
+        </motion.p>
+
+        {/* Tagline */}
+        <motion.p
+          variants={itemVariants}
+          className="text-base sm:text-lg text-white/40 mb-3 italic font-mono"
+        >
+          From insight to launch — shipping AI products that move markets
         </motion.p>
 
         <motion.p
           variants={itemVariants}
-          className="text-base sm:text-lg text-gray-600 dark:text-gray-400 mb-2 max-w-3xl mx-auto italic"
+          className="text-lg sm:text-xl text-white/60 mb-12 max-w-2xl mx-auto leading-relaxed"
         >
-          Turning complexity into intelligent systems
-        </motion.p>
-
-        <motion.p
-          variants={itemVariants}
-          className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed"
-        >
-          Building intelligent systems that save thousands of hours & drive
-          efficiency.
+          5+ years bridging technical depth and product thinking — discovering user problems, defining AI-powered solutions, and driving them to market.
         </motion.p>
 
         {/* CTA Buttons */}
@@ -158,25 +159,26 @@ export function Hero() {
         >
           <MagneticButton
             href="/#projects"
-            className="px-8 py-4 rounded-xl bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-600 text-white font-semibold shadow-lg hover:shadow-xl transition-all"
+            className="glass-btn-accent px-8 py-4 rounded-xl text-white font-semibold font-mono tracking-wide"
           >
             View My Projects
           </MagneticButton>
           <MagneticButton
             href="/resume.pdf"
             download="Gokulkrishna_A_Resume.pdf"
-            className="px-8 py-4 rounded-xl border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-zinc-900 text-gray-900 dark:text-white font-semibold hover:bg-gray-50 dark:hover:bg-zinc-800 transition-all"
+            className="glass-btn px-8 py-4 rounded-xl text-[#00f7ff] font-semibold font-mono tracking-wide"
             onClick={async (e) => {
-              // Check if file exists, if not, open email instead
               try {
                 const response = await fetch("/resume.pdf", { method: "HEAD" });
                 if (!response.ok) {
                   e.preventDefault();
-                  window.location.href = "mailto:gananthakris@binghamton.edu?subject=Resume Request&body=Hi Gokulkrishna, I'd like to request your resume.";
+                  window.location.href =
+                    "mailto:gananthakris@binghamton.edu?subject=Resume Request&body=Hi Gokulkrishna, I'd like to request your resume.";
                 }
               } catch {
                 e.preventDefault();
-                window.location.href = "mailto:gananthakris@binghamton.edu?subject=Resume Request&body=Hi Gokulkrishna, I'd like to request your resume.";
+                window.location.href =
+                  "mailto:gananthakris@binghamton.edu?subject=Resume Request&body=Hi Gokulkrishna, I'd like to request your resume.";
               }
             }}
           >
@@ -187,15 +189,16 @@ export function Hero() {
         {/* Social Links */}
         <motion.div
           variants={itemVariants}
-          className="flex gap-6 justify-center mt-12"
+          className="flex gap-8 justify-center mt-14"
         >
           <motion.a
             href="https://www.linkedin.com/in/agokulakrishna"
             target="_blank"
             rel="noopener noreferrer"
-            whileHover={{ scale: 1.1, y: -2 }}
+            whileHover={{ scale: 1.15, y: -3 }}
             whileTap={{ scale: 0.95 }}
-            className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+            className="text-white/40 hover:text-[#00f7ff] transition-colors"
+            style={{ filter: "drop-shadow(0 0 0px transparent)" }}
             aria-label="LinkedIn"
           >
             <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -206,9 +209,9 @@ export function Hero() {
             href="https://github.com/gananthakris"
             target="_blank"
             rel="noopener noreferrer"
-            whileHover={{ scale: 1.1, y: -2 }}
+            whileHover={{ scale: 1.15, y: -3 }}
             whileTap={{ scale: 0.95 }}
-            className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
+            className="text-white/40 hover:text-white transition-colors"
             aria-label="GitHub"
           >
             <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -220,8 +223,22 @@ export function Hero() {
             </svg>
           </motion.a>
         </motion.div>
+
+        {/* Scroll indicator */}
+        <motion.div
+          variants={itemVariants}
+          className="mt-16 flex flex-col items-center gap-2"
+        >
+          <span className="text-xs font-mono text-white/25 tracking-widest uppercase">
+            Scroll
+          </span>
+          <motion.div
+            className="w-px h-10 bg-gradient-to-b from-[#fbbf24]/40 to-transparent"
+            animate={{ scaleY: [0, 1, 0], opacity: [0, 1, 0] }}
+            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+          />
+        </motion.div>
       </motion.div>
     </section>
   );
 }
-

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
@@ -17,13 +18,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Gokulkrishna A | AI & Automation Engineer",
-  description: "Portfolio showcasing AI, RPA, and full-stack automation projects. Automation Engineer with 5+ years of experience. Master's student in Computer Science at Binghamton University.",
-  keywords: ["Gokulkrishna A", "AI Automation Engineer", "RPA Developer", "AI Enthusiast", "Full-stack Developer", "Binghamton University", "Automation Anywhere", "Python", "Machine Learning", "Next.js", "TypeScript"],
+  title: "Gokulkrishna A | Applied AI · Product · GTM",
+  description: "Applied AI, Product, and GTM professional with 5+ years bridging technical depth and market execution. Shipped AI and automation products across healthcare and BPO. MS CS at Binghamton University.",
+  keywords: ["Gokulkrishna A", "Applied AI", "AI Product Manager", "GTM Strategy", "AI Product", "Go-to-Market", "Automation", "LLM Products", "AI Agents", "Product Management", "Binghamton University", "Python", "Next.js"],
   authors: [{ name: "Gokulkrishna A" }],
   openGraph: {
-    title: "Gokulkrishna A | AI & Automation Engineer",
-    description: "Portfolio showcasing AI, RPA, and full-stack automation projects.",
+    title: "Gokulkrishna A | Applied AI · Product · GTM",
+    description: "Applied AI, Product, and GTM professional shipping AI-powered products that move markets.",
     type: "website",
     url: "https://gokulai.dev",
     images: [
@@ -37,8 +38,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Gokulkrishna A | AI & Automation Engineer",
-    description: "Portfolio showcasing AI, RPA, and full-stack automation projects.",
+    title: "Gokulkrishna A | Applied AI · Product · GTM",
+    description: "Applied AI, Product, and GTM professional shipping AI-powered products that move markets.",
   },
   robots: {
     index: true,
@@ -56,8 +57,21 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50 dark:bg-black text-gray-900 dark:text-white`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#020408] text-white`}
       >
+        <Script
+          data-goatcounter="https://agokulakrishna.goatcounter.com/count"
+          src="//gc.zgo.at/count.js"
+          strategy="afterInteractive"
+        />
+        <!-- Place this script before closing </body> tag -->
+<script>
+  window._evolveConfig = {
+    widgetId: "72535125-0b5f-4408-b2da-2ee4ffdb2347",
+    apiKey: "0204838d-939c-4ec5-bb3e-4b7fbe58f1bd"
+  };
+</script>
+<script src="https://evolvecopy.webadmin-503.workers.dev/widget.main.js"></script>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

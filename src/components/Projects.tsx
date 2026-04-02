@@ -7,23 +7,63 @@ import Image from "next/image";
 const projects = [
   {
     id: 1,
-    title: "Portfolio Website",
+    title: "SplitBill — AI-Powered Bill Splitter",
     description:
-      "A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS.",
+      "Mobile-first web app that scans any bill with your camera, uses OCR + AI to parse line items, and splits costs fairly across people.",
     problem:
-      "Needed a professional portfolio to showcase my skills and experience in automation, AI, and product management.",
+      "Splitting bills at restaurants or shared expenses is tedious and error-prone — especially across multiple people with different orders.",
     solution:
-      "Built a fully responsive portfolio with dark mode, smooth animations, and optimized performance using modern web technologies.",
+      "Built an AI-native product using Tesseract.js for on-device OCR, Supabase for real-time data, and a clean UX that lets users assign items and split in seconds.",
     impact: [
-      "Fully responsive design",
-      "Optimized for performance and SEO",
-      "Accessible and user-friendly interface",
+      "Eliminates manual re-entry — photo to split in under 10 seconds",
+      "Runs OCR client-side with no image upload (privacy-first design decision)",
+      "Persistent split history via Supabase — usable across group trips",
     ],
-    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    tech: ["Next.js 14", "Supabase", "Tesseract.js", "TypeScript", "Tailwind CSS"],
     status: "Completed",
     image: null,
     github: "https://github.com/gananthakris",
-    demo: "https://gokulai.dev",
+    demo: null,
+  },
+  {
+    id: 2,
+    title: "Healthcare Ops Automation Platform",
+    description:
+      "Owned discovery, spec, and delivery of an automation platform that eliminated manual workflows across 3 healthcare back-office teams.",
+    problem:
+      "Healthcare ops teams were spending 60%+ of their time on repetitive data entry, reconciliation, and reporting — leaving no capacity for patient-facing work.",
+    solution:
+      "Led stakeholder discovery to map pain points, defined product requirements, and shipped a suite of automation bots integrated with the existing EHR and reporting systems.",
+    impact: [
+      "Reduced average process handling time significantly across 3 operational teams",
+      "Standardized exception handling and audit logging — adopted as org-wide platform standard",
+      "Full lifecycle ownership: discovery → spec → build → launch → iteration",
+    ],
+    tech: ["Automation Anywhere", "Python", "SQL", "API Integration"],
+    status: "Completed",
+    image: null,
+    github: null,
+    demo: null,
+  },
+  {
+    id: 3,
+    title: "GTM Intelligence Layer — CRM Automation",
+    description:
+      "Built real-time GTM intelligence integrations connecting CRM, back-office data, and alerting — giving sales teams live pipeline visibility.",
+    problem:
+      "Sales and GTM teams at TaskUs were flying blind — CRM data was stale, manual updates lagged by hours, and reps had no real-time signal on deal status or escalations.",
+    solution:
+      "Integrated Salesforce, Oracle CRM, and Google Chat APIs to create a live data pipeline — auto-populating CRM fields and surfacing alerts to reps in real time.",
+    impact: [
+      "GTM teams gained real-time pipeline visibility without manual CRM updates",
+      "Automated 20+ back-office workflows — freeing ops team capacity for higher-value work",
+      "Reduced time-to-alert on critical deal events from hours to seconds",
+    ],
+    tech: ["Python", "Salesforce API", "Oracle CRM", "Google Chat API", "Automation Anywhere"],
+    status: "Completed",
+    image: null,
+    github: null,
+    demo: null,
   },
 ];
 
@@ -31,7 +71,7 @@ export function Projects() {
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
 
   return (
-    <section id="projects" className="py-20 bg-white dark:bg-zinc-900">
+    <section id="projects" className="py-20 bg-[#0d0c0f]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -40,11 +80,11 @@ export function Projects() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4 text-gray-900 dark:text-white">
+          <h2 className="text-4xl font-bold mb-4 text-white">
             Featured Projects
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-600 mx-auto rounded-full"></div>
-          <p className="text-lg text-gray-600 dark:text-gray-400 mt-4 max-w-2xl mx-auto">
+          <div className="w-20 h-1 bg-gradient-to-r from-amber-500 via-amber-400 to-orange-400 mx-auto rounded-full"></div>
+          <p className="text-lg text-white/45 mt-4 max-w-2xl mx-auto">
             Projects and work I've been building and learning from
           </p>
         </motion.div>
@@ -61,9 +101,9 @@ export function Projects() {
               className="group cursor-pointer"
               onClick={() => setSelectedProject(project.id)}
             >
-              <div className="bg-white dark:bg-zinc-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-200/50 dark:border-gray-800/50 group">
+              <div className="bg-[#0d0c0f] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-200/50 dark:border-gray-800/50 group">
                 {/* Project Image/Thumbnail with Hover Effect */}
-                <div className="relative h-48 bg-gradient-to-br from-indigo-500 via-purple-500 to-violet-500 overflow-hidden">
+                <div className="relative h-48 bg-gradient-to-br from-amber-600 via-amber-500 to-orange-500 overflow-hidden">
                   <motion.div
                     className="absolute inset-0"
                     whileHover={{ scale: 1.1 }}
@@ -128,29 +168,29 @@ export function Projects() {
                 </div>
 
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                  <h3 className="text-xl font-bold text-white mb-2">
                     {project.title}
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 line-clamp-2">
+                  <p className="text-white/45 text-sm mb-4 line-clamp-2">
                     {project.description}
                   </p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tech.slice(0, 3).map((tech) => (
                       <span
                         key={tech}
-                        className="px-2 py-1 rounded text-xs font-medium bg-gray-100 dark:bg-zinc-800 text-gray-700 dark:text-gray-300"
+                        className="px-2 py-1 rounded text-xs font-medium bg-amber-900/20 text-amber-300/80 border border-amber-900/30"
                       >
                         {tech}
                       </span>
                     ))}
                     {project.tech.length > 3 && (
-                      <span className="px-2 py-1 rounded text-xs font-medium bg-gray-100 dark:bg-zinc-800 text-gray-700 dark:text-gray-300">
+                      <span className="px-2 py-1 rounded text-xs font-medium bg-amber-900/20 text-amber-300/80 border border-amber-900/30">
                         +{project.tech.length - 3}
                       </span>
                     )}
                   </div>
                   <div className="flex items-center justify-between">
-                    <button className="text-sm font-medium text-indigo-600 dark:text-indigo-400 hover:text-violet-600 dark:hover:text-violet-400 transition-colors">
+                    <button className="text-sm font-medium text-amber-400 hover:text-amber-300 transition-colors">
                       Learn more →
                     </button>
                     {(project.github || project.demo) && (
@@ -207,7 +247,7 @@ export function Projects() {
                 animate={{ scale: 1, opacity: 1 }}
                 exit={{ scale: 0.9, opacity: 0 }}
                 onClick={(e) => e.stopPropagation()}
-                className="bg-white dark:bg-zinc-900 rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl"
+                className="bg-[#0d0c0f] rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl"
               >
                 {(() => {
                   const project = projects.find((p) => p.id === selectedProject);
@@ -216,7 +256,7 @@ export function Projects() {
                   return (
                     <div className="p-8">
                       <div className="flex items-start justify-between mb-6">
-                        <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
+                        <h2 className="text-3xl font-bold text-white">
                           {project.title}
                         </h2>
                         <button
@@ -320,7 +360,7 @@ export function Projects() {
                                 rel="noopener noreferrer"
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
-                                className="flex-1 px-6 py-3 rounded-lg bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-600 text-white font-medium hover:from-indigo-700 hover:via-purple-700 hover:to-violet-700 transition-all flex items-center justify-center gap-2"
+                                className="flex-1 px-6 py-3 rounded-lg bg-gradient-to-r from-amber-500 via-amber-400 to-orange-400 text-white font-medium hover:from-indigo-700 hover:via-purple-700 hover:to-violet-700 transition-all flex items-center justify-center gap-2"
                               >
                                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />

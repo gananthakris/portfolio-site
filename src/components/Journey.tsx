@@ -38,7 +38,7 @@ const currentFocus = [
 
 export function Journey() {
   return (
-    <section className="py-20 bg-white dark:bg-zinc-900">
+    <section className="py-20 bg-[#0d0c0f]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -47,15 +47,15 @@ export function Journey() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4 text-gray-900 dark:text-white">
+          <h2 className="text-4xl font-bold mb-4 text-white">
             My Journey
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-600 mx-auto rounded-full"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-amber-500 via-amber-400 to-orange-400 mx-auto rounded-full"></div>
         </motion.div>
 
         {/* Timeline */}
         <div className="relative mb-16">
-          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 via-purple-500 to-indigo-500 hidden md:block"></div>
+          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-amber-500 via-amber-400 to-orange-400 hidden md:block"></div>
           <div className="space-y-12">
             {journeySteps.map((step, index) => (
               <motion.div
@@ -67,20 +67,20 @@ export function Journey() {
                 className="relative pl-0 md:pl-20"
               >
                 <div className="absolute left-0 md:left-6 top-2">
-                  <div className="w-4 h-4 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-violet-500 border-4 border-white dark:border-zinc-900 shadow-lg"></div>
+                  <div className="w-4 h-4 rounded-full bg-gradient-to-r from-amber-500 via-amber-400 to-orange-400 border-4 border-white dark:border-zinc-900 shadow-lg"></div>
                 </div>
                 <motion.div
                   whileHover={{ scale: 1.02, x: 10 }}
-                  className="bg-gray-50 dark:bg-zinc-800 rounded-xl p-6 border border-gray-200/50 dark:border-gray-800/50"
+                  className="bg-white/5 border border-amber-900/15 rounded-xl p-6 border border-gray-200/50 dark:border-gray-800/50"
                 >
                   <div className="flex items-start gap-4">
                     <span className="text-4xl">{step.icon}</span>
                     <div>
                       <div className="flex items-center gap-3 mb-2">
-                        <span className="text-sm font-semibold text-blue-600 dark:text-blue-400">
+                        <span className="text-sm font-semibold text-amber-400">
                           {step.year}
                         </span>
-                        <h3 className="text-xl font-bold text-gray-900 dark:text-white">
+                        <h3 className="text-xl font-bold text-white">
                           {step.title}
                         </h3>
                       </div>
@@ -101,10 +101,10 @@ export function Journey() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="bg-gradient-to-r from-indigo-50 via-purple-50 to-violet-50 dark:from-indigo-950/20 dark:via-purple-950/20 dark:to-violet-950/20 rounded-2xl p-8 border border-indigo-200/50 dark:border-indigo-800/50"
+          className="bg-amber-900/10 rounded-2xl p-8 border border-amber-800/20"
         >
-          <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-            Currently Exploring → <span className="text-indigo-600 dark:text-indigo-400">LLMs + RAG + Agents</span>
+          <h3 className="text-2xl font-bold text-white mb-4">
+            Currently Exploring → <span className="text-amber-400">LLMs + RAG + Agents</span>
           </h3>
           <div className="flex flex-wrap gap-3">
             {currentFocus.map((item, index) => (
@@ -115,7 +115,7 @@ export function Journey() {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
                 whileHover={{ scale: 1.05, y: -2 }}
-                className="px-4 py-2 rounded-lg bg-white dark:bg-zinc-900 text-gray-900 dark:text-white font-medium shadow-sm border border-gray-200 dark:border-gray-800 hover:border-indigo-300 dark:hover:border-indigo-700 transition-colors"
+                className="px-4 py-2 rounded-lg bg-[#0d0c0f] text-white font-medium shadow-sm border border-gray-200 dark:border-gray-800 hover:border-amber-500/40 transition-colors"
               >
                 {item}
               </motion.span>

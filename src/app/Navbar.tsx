@@ -17,7 +17,7 @@ export default function Navbar() {
   }, []);
 
   const link =
-    "text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 font-medium";
+    "text-gray-400 dark:text-gray-400 hover:text-amber-400 dark:hover:text-amber-400 transition-colors duration-300 font-medium";
 
   return (
     <motion.nav
@@ -26,14 +26,14 @@ export default function Navbar() {
       transition={{ duration: 0.5 }}
       className={`sticky top-0 z-50 border-b transition-all duration-300 ${
         isScrolled
-          ? "border-gray-200/80 dark:border-gray-800/80 bg-white/90 dark:bg-zinc-950/90 backdrop-blur-lg shadow-sm"
-          : "border-gray-200/50 dark:border-gray-800/50 bg-white/70 dark:bg-black/50 backdrop-blur-md"
+          ? "border-amber-900/20 bg-[#08070a]/95 backdrop-blur-lg shadow-sm"
+          : "border-amber-900/10 bg-[#08070a]/70 backdrop-blur-md"
       }`}
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
         <Link
           href="/"
-          className="text-xl font-bold tracking-tight text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
+          className="text-xl font-bold tracking-tight text-white hover:text-amber-400 transition-colors duration-300"
         >
           Gokulkrishna A
         </Link>
@@ -63,7 +63,7 @@ export default function Navbar() {
             <ThemeToggle />
             <Link
               href="/#contact"
-              className="px-4 py-2 rounded-lg bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-600 text-white hover:from-indigo-700 hover:via-purple-700 hover:to-violet-700 transition-all duration-300 shadow-md hover:shadow-lg font-medium text-sm"
+              className="px-4 py-2 rounded-lg bg-gradient-to-r from-amber-500 to-orange-500 text-[#08070a] hover:from-amber-400 hover:to-orange-400 transition-all duration-300 shadow-md hover:shadow-amber-500/25 font-semibold text-sm"
             >
               Contact
             </Link>

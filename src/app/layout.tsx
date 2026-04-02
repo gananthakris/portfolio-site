@@ -64,14 +64,15 @@ export default function RootLayout({
           src="//gc.zgo.at/count.js"
           strategy="afterInteractive"
         />
-        <!-- Place this script before closing </body> tag -->
-<script>
-  window._evolveConfig = {
-    widgetId: "72535125-0b5f-4408-b2da-2ee4ffdb2347",
-    apiKey: "0204838d-939c-4ec5-bb3e-4b7fbe58f1bd"
-  };
-</script>
-<script src="https://evolvecopy.webadmin-503.workers.dev/widget.main.js"></script>
+        <Script id="evolve-config" strategy="afterInteractive">
+          {`
+            window._evolveConfig = {
+              widgetId:"72535125-0b5f-4408-b2da-2ee4ffdb2347",
+              apiKey: "0204838d-939c-4ec5-bb3e-4b7fbe58f1bd"
+            };
+          `}
+        </Script>
+        <Script src="https://evolvecopy.webadmin-503.workers.dev/widget.main.js" />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -84,6 +85,6 @@ export default function RootLayout({
           <Analytics />
         </ThemeProvider>
       </body>
-    </html>
+    </html >
   );
 }

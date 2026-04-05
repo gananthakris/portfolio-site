@@ -4,25 +4,23 @@ import { motion } from "framer-motion";
 
 const experiences = [
   {
-    title: "AI Product & Automation Lead",
+    title: "Product & Automation Lead",
     company: "Sagility Health",
     period: "Nov 2022 – Jul 2024",
     location: "Coimbatore, India",
-    duration: "1 year 8 months",
     color: "blue",
     achievements: [
-      "Owned full product lifecycle for 8+ AI automation products — from discovery and requirements to launch and post-deployment support",
+      "Owned full product lifecycle for 8+ automation products — from discovery and requirements to launch and post-deployment support",
       "Drove $300K+ in annual cost savings by identifying bottlenecks and shipping automation solutions with clear ROI alignment",
       "Reduced average process handling time by 65% across healthcare ops teams through targeted automation delivery",
       "Established reusable bot architecture and internal tooling standards adopted as the org-wide platform standard",
     ],
   },
   {
-    title: "Applied AI & Automation Specialist",
+    title: "Automation Specialist",
     company: "TaskUs",
     period: "Nov 2020 – Nov 2022",
     location: "Indore, India",
-    duration: "2 years",
     color: "purple",
     achievements: [
       "Shipped 20+ automation products eliminating 10,000+ hours/year of manual back-office work across GTM and ops teams",
@@ -32,15 +30,14 @@ const experiences = [
     ],
   },
   {
-    title: "AI Solutions Engineer",
+    title: "Automation Engineer",
     company: "VRBotz",
     period: "Mar 2019 – Nov 2020",
     location: "Bangalore, India",
-    duration: "1 year 8 months",
     color: "indigo",
     achievements: [
       "Scoped and delivered automation across payroll, reconciliation, and data validation — reducing client processing time by 50%+",
-      "Translated enterprise client pain points into product specs and shipped AI-powered workflows saving 2,000+ hours/year per client",
+      "Translated enterprise client pain points into product specs and shipped automation workflows saving 2,000+ hours/year per client",
       "Iterated on deployed products based on user feedback, maintaining 95%+ uptime and continuous improvement cycles",
     ],
   },
@@ -111,7 +108,7 @@ export function Experience() {
                         {exp.company}
                       </p>
                       <p className="text-sm text-white/40">
-                        {exp.period} · {exp.location} · {exp.duration}
+                        {exp.period} · {exp.location}
                       </p>
                     </div>
                   </div>

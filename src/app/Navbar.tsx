@@ -43,9 +43,6 @@ export default function Navbar() {
             <Link href="/" className={link}>
               Portfolio
             </Link>
-            <Link href="/marketing" className={link}>
-              Marketing
-            </Link>
             <a href="/#about" className={link}>
               About
             </a>

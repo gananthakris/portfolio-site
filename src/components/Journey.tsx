@@ -5,13 +5,13 @@ import { motion } from "framer-motion";
 const journeySteps = [
   {
     year: "2019-2020",
-    title: "RPA Engineer",
+    title: "Automation Engineer",
     description: "Started building automation solutions with WorkFusion and Python",
     icon: "🤖",
   },
   {
     year: "2020-2022",
-    title: "RPA Developer",
+    title: "Automation Specialist",
     description: "Developed 20+ production bots, integrated APIs, and scaled automation",
     icon: "⚡",
   },
